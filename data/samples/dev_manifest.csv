@@ -1,0 +1,2 @@
+image_path,study_id,atelectasis_label,cardiomegaly_label,consolidation_label,edema_label,pleural_effusion_label,pneumonia_label,pneumothorax_label
+data/samples/chest_xray_demo.jpg,dev001,0,0,-1,0,1,,0
