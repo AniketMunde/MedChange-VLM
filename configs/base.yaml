@@ -1,0 +1,17 @@
+project:
+  name: "MedChange-VLM"
+  version: "0.1.0"
+  seed: 42
+
+environment:
+  device: "auto"
+  precision: "auto"
+
+data:
+  sample_dir: "data/samples"
+
+model:
+  name: null
+
+logging:
+  level: "INFO"

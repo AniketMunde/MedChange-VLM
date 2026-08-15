@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+.env.local
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Medical / research datasets
+data/raw/
+data/interim/
+data/processed/
+data/annotations/
+
+# Model artifacts
+models/checkpoints/
+models/adapters/
+models/exported/
+
+# ML experiment artifacts
+wandb/
+mlruns/
+runs/
+
+# Hugging Face cache
+.cache/
+huggingface/
+
+# Torch artifacts
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Large compressed files
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Temporary files
+tmp/
+temp/

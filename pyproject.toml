@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medchange-vlm"
+version = "0.1.0"
+description = "Grounded vision-language framework for longitudinal chest X-ray analysis."
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+
+authors = [
+    {name = "Aniket Ramchandra Munde"}
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-ra"
