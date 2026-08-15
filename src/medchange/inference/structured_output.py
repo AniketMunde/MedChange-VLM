@@ -50,11 +50,25 @@ def extract_json(
     """
     Extract a JSON object from VLM output.
 
-    Handles occasional markdown fences or extra model text.
+    Supports:
+    - plain JSON
+    - markdown-fenced JSON
+    - text surrounding JSON
+    - leading/trailing whitespace
+
+    Distinguishes between:
+    - no JSON object present
+    - malformed/incomplete JSON
     """
 
     cleaned = text.strip()
 
+    if not cleaned:
+        raise ValueError(
+            "Model output is empty."
+        )
+
+    # Remove optional opening markdown fence.
     cleaned = re.sub(
         r"^```(?:json)?\s*",
         "",
@@ -62,37 +76,65 @@ def extract_json(
         flags=re.IGNORECASE,
     )
 
+    # Remove optional closing markdown fence.
     cleaned = re.sub(
         r"\s*```$",
         "",
         cleaned,
     )
 
+    # First attempt: entire response is valid JSON.
     try:
-        return json.loads(cleaned)
+        parsed = json.loads(cleaned)
+
+        if not isinstance(parsed, dict):
+            raise ValueError(
+                "Top-level model output must be a JSON object."
+            )
+
+        return parsed
 
     except json.JSONDecodeError:
         pass
 
+    # Look for evidence of a JSON object.
     start = cleaned.find("{")
     end = cleaned.rfind("}")
 
-    if start == -1 or end == -1:
+    # No opening brace means there is no JSON object at all.
+    if start == -1:
         raise ValueError(
             "No JSON object found in model output."
         )
 
-    candidate = cleaned[
-        start:end + 1
-    ]
+    # Opening brace exists but closing brace does not.
+    # This is malformed/incomplete JSON.
+    if end == -1:
+        raise ValueError(
+            "Model produced malformed JSON."
+        )
+
+    if end <= start:
+        raise ValueError(
+            "Model produced malformed JSON."
+        )
+
+    candidate = cleaned[start:end + 1]
 
     try:
-        return json.loads(candidate)
+        parsed = json.loads(candidate)
 
     except json.JSONDecodeError as exc:
         raise ValueError(
             "Model produced malformed JSON."
         ) from exc
+
+    if not isinstance(parsed, dict):
+        raise ValueError(
+            "Top-level model output must be a JSON object."
+        )
+
+    return parsed
 
 
 def parse_vlm_response(

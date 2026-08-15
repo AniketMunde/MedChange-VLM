@@ -63,7 +63,7 @@ def main():
         MedChangePipeline()
     )
 
-    prediction = (
+    prediction,metrics = (
         pipeline.analyze(
             image_path=args.image,
             study_id=args.study_id,
@@ -72,27 +72,29 @@ def main():
     )
 
     print()
-    print("=" * 70)
-    print(
-        "MedChange-VLM Prediction"
-    )
-    print("=" * 70)
+    print("Inference metrics")
+    print("-" * 70)
 
     print(
-        json.dumps(
-            prediction.model_dump(
-                mode="json"
-            ),
-            indent=2,
+        f"Elapsed time     : "
+        f"{metrics.elapsed_seconds:.2f} s"
+    )
+
+    if metrics.gpu_allocated_gb is not None:
+        print(
+            f"GPU allocated    : "
+            f"{metrics.gpu_allocated_gb:.2f} GB"
         )
-    )
 
-    print("=" * 70)
+        print(
+            f"GPU reserved     : "
+            f"{metrics.gpu_reserved_gb:.2f} GB"
+        )
 
-    print(
-        "Research use only — "
-        "not for clinical diagnosis."
-    )
+        print(
+            f"GPU peak memory  : "
+            f"{metrics.gpu_peak_allocated_gb:.2f} GB"
+        )
 
 
 if __name__ == "__main__":

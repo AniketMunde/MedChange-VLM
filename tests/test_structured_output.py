@@ -119,3 +119,31 @@ def test_invalid_json_raises_error():
         match="No JSON object found",
     ):
         extract_json(raw)
+def test_empty_output_raises_error():
+    with pytest.raises(
+        ValueError,
+        match="Model output is empty",
+    ):
+        extract_json("")
+
+
+def test_non_object_json_raises_error():
+    with pytest.raises(
+        ValueError,
+        match="JSON object",
+    ):
+        extract_json("[1, 2, 3]")
+
+
+def test_malformed_json_raises_error():
+    raw = """
+    {
+        "findings": [],
+        "impression": "broken"
+    """
+
+    with pytest.raises(
+        ValueError,
+        match="malformed JSON",
+    ):
+        extract_json(raw)
