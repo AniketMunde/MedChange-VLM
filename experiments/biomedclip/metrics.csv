@@ -1,0 +1,8 @@
+finding,status,auroc,auprc,f1,precision,recall,threshold,n_total,n_evaluated,n_positive,n_negative,n_excluded
+atelectasis,evaluated,,,0.0,0.0,0.0,0.5,1,1,0,1,0
+cardiomegaly,evaluated,,,0.0,0.0,0.0,0.5,1,1,0,1,0
+consolidation,skipped,,,,,,0.5,1,0,0,0,1
+edema,evaluated,,,0.0,0.0,0.0,0.5,1,1,0,1,0
+pleural_effusion,evaluated,,,0.0,0.0,0.0,0.5,1,1,1,0,0
+pneumonia,skipped,,,,,,0.5,1,0,0,0,1
+pneumothorax,evaluated,,,0.0,0.0,0.0,0.5,1,1,0,1,0

@@ -1,0 +1,2 @@
+image_path,study_id,inference_seconds,atelectasis_score,atelectasis_label,cardiomegaly_score,cardiomegaly_label,consolidation_score,consolidation_label,edema_score,edema_label,pleural_effusion_score,pleural_effusion_label,pneumonia_score,pneumonia_label,pneumothorax_score,pneumothorax_label
+data/samples/chest_xray_demo.jpg,dev001,0.1278230999596417,0.262939453125,0,0.0792236328125,0,0.006389617919921875,-1,0.1666259765625,0,0.162353515625,1,0.921875,,0.1175537109375,0
