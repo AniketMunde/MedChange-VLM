@@ -10,6 +10,12 @@ environment:
 data:
   sample_dir: "data/samples"
 
+image:
+  size: 448
+  channels: 3
+  normalize: false
+  preserve_aspect_ratio: true
+
 model:
   name: null
 
