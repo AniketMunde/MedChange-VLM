@@ -1,0 +1,108 @@
+{
+  "requested_samples": 2000,
+  "actual_samples": 2000,
+  "development_samples": 798,
+  "test_samples": 1202,
+  "development_unique_patients": 700,
+  "test_unique_patients": 1052,
+  "patient_overlap_count": 0,
+  "seed": 42,
+  "development_fraction": 0.4,
+  "development_views": {
+    "PA": 483,
+    "AP": 315
+  },
+  "test_views": {
+    "PA": 723,
+    "AP": 479
+  },
+  "findings": [
+    {
+      "finding": "atelectasis",
+      "development_positive": 72,
+      "development_negative": 726,
+      "development_prevalence": 0.09022556390977443,
+      "test_positive": 127,
+      "test_negative": 1075,
+      "test_prevalence": 0.10565723793677205,
+      "calibrated_threshold": 0.11499999999999999,
+      "warnings": []
+    },
+    {
+      "finding": "cardiomegaly",
+      "development_positive": 16,
+      "development_negative": 782,
+      "development_prevalence": 0.020050125313283207,
+      "test_positive": 36,
+      "test_negative": 1166,
+      "test_prevalence": 0.029950083194675542,
+      "calibrated_threshold": 0.8949999999999999,
+      "warnings": [
+        "Only 16 positive development examples; threshold calibration may be unstable."
+      ]
+    },
+    {
+      "finding": "consolidation",
+      "development_positive": 33,
+      "development_negative": 765,
+      "development_prevalence": 0.041353383458646614,
+      "test_positive": 42,
+      "test_negative": 1160,
+      "test_prevalence": 0.03494176372712146,
+      "calibrated_threshold": 0.08499999999999999,
+      "warnings": [
+        "Very low calibrated threshold: 0.085."
+      ]
+    },
+    {
+      "finding": "edema",
+      "development_positive": 22,
+      "development_negative": 776,
+      "development_prevalence": 0.02756892230576441,
+      "test_positive": 28,
+      "test_negative": 1174,
+      "test_prevalence": 0.02329450915141431,
+      "calibrated_threshold": 0.945,
+      "warnings": [
+        "Very high calibrated threshold: 0.945."
+      ]
+    },
+    {
+      "finding": "pleural_effusion",
+      "development_positive": 68,
+      "development_negative": 730,
+      "development_prevalence": 0.08521303258145363,
+      "test_positive": 140,
+      "test_negative": 1062,
+      "test_prevalence": 0.11647254575707154,
+      "calibrated_threshold": 0.20499999999999996,
+      "warnings": []
+    },
+    {
+      "finding": "pneumonia",
+      "development_positive": 14,
+      "development_negative": 784,
+      "development_prevalence": 0.017543859649122806,
+      "test_positive": 22,
+      "test_negative": 1180,
+      "test_prevalence": 0.018302828618968387,
+      "calibrated_threshold": 0.95,
+      "warnings": [
+        "Only 14 positive development examples; threshold calibration may be unstable.",
+        "Very high calibrated threshold: 0.950."
+      ]
+    },
+    {
+      "finding": "pneumothorax",
+      "development_positive": 44,
+      "development_negative": 754,
+      "development_prevalence": 0.05513784461152882,
+      "test_positive": 54,
+      "test_negative": 1148,
+      "test_prevalence": 0.04492512479201331,
+      "calibrated_threshold": 0.4799999999999999,
+      "warnings": []
+    }
+  ],
+  "warnings": []
+}
