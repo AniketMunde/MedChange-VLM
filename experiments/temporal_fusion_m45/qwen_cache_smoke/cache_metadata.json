@@ -1,0 +1,25 @@
+{
+  "milestone": "M4.5.1",
+  "model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "quantization": "4-bit",
+  "seed": 42,
+  "requested_pairs": 3,
+  "successful_cached_pairs": 3,
+  "processed_this_run": 0,
+  "failed_this_run": 0,
+  "cached_finding_rows": 21,
+  "expected_finding_rows": 21,
+  "target_findings": [
+    "atelectasis",
+    "cardiomegaly",
+    "consolidation",
+    "edema",
+    "pleural_effusion",
+    "pneumonia",
+    "pneumothorax"
+  ],
+  "run_elapsed_seconds": 0.0006083000334911048,
+  "mean_inference_seconds": 32.177562733355444,
+  "max_gpu_peak_gb": 2.498101234436035,
+  "json_repair_rate": 0.0
+}

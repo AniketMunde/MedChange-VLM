@@ -1,0 +1,4 @@
+pair_id,patient_id,fusion_category,prior_image_index,current_image_index,json_repaired,elapsed_seconds,gpu_peak_gb,status
+14663_42_43,14663,single_change,00014663_042.png,00014663_043.png,False,38.135256900044624,2.498101234436035,success
+2033_2_3,2033,unchanged,00002033_002.png,00002033_003.png,False,28.655469799996354,2.4980826377868652,success
+11553_17_18,11553,unchanged,00011553_017.png,00011553_018.png,False,29.741961500025354,2.4980826377868652,success

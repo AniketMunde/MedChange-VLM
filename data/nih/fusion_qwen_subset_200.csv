@@ -1,0 +1,201 @@
+pair_id,patient_id,prior_image_index,current_image_index,prior_follow_up,current_follow_up,prior_view,current_view,same_view,prior_labels,current_labels,atelectasis_temporal,cardiomegaly_temporal,consolidation_temporal,edema_temporal,pleural_effusion_temporal,pneumonia_temporal,pneumothorax_temporal,num_changed_findings,has_temporal_change,fusion_category
+14663_42_43,14663,00014663_042.png,00014663_043.png,42,43,AP,AP,True,Mass,Consolidation,absent,absent,new,absent,absent,absent,absent,1,True,single_change
+2033_2_3,2033,00002033_002.png,00002033_003.png,2,3,PA,PA,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+11553_17_18,11553,00011553_017.png,00011553_018.png,17,18,AP,AP,True,Infiltration,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+26818_6_7,26818,00026818_006.png,00026818_007.png,6,7,AP,AP,True,Consolidation,Edema,absent,absent,resolved,new,absent,absent,absent,2,True,multi_change
+17926_0_1,17926,00017926_000.png,00017926_001.png,0,1,PA,PA,True,Effusion,Consolidation|Effusion,absent,absent,new,absent,persistent,absent,absent,1,True,single_change
+20398_2_3,20398,00020398_002.png,00020398_003.png,2,3,AP,AP,True,Edema|Infiltration,Edema|Effusion,absent,absent,absent,persistent,new,absent,absent,1,True,single_change
+6260_0_1,6260,00006260_000.png,00006260_001.png,0,1,PA,PA,True,No Finding,Pneumonia,absent,absent,absent,absent,absent,new,absent,1,True,single_change
+15058_18_19,15058,00015058_018.png,00015058_019.png,18,19,AP,AP,True,Consolidation,Effusion|Infiltration,absent,absent,resolved,absent,new,absent,absent,2,True,multi_change
+21006_28_29,21006,00021006_028.png,00021006_029.png,28,29,PA,PA,True,No Finding,Atelectasis|Infiltration|Pneumothorax,new,absent,absent,absent,absent,absent,new,2,True,multi_change
+11741_2_3,11741,00011741_002.png,00011741_003.png,2,3,PA,PA,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+7317_16_17,7317,00007317_016.png,00007317_017.png,16,17,PA,PA,True,Nodule,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+7621_8_9,7621,00007621_008.png,00007621_009.png,8,9,PA,PA,True,No Finding,Atelectasis|Effusion,new,absent,absent,absent,new,absent,absent,2,True,multi_change
+2474_3_4,2474,00002474_003.png,00002474_004.png,3,4,AP,AP,True,No Finding,Edema|Infiltration|Pneumonia,absent,absent,absent,new,absent,new,absent,2,True,multi_change
+12511_5_6,12511,00012511_005.png,00012511_006.png,5,6,PA,PA,True,Effusion,No Finding,absent,absent,absent,absent,resolved,absent,absent,1,True,single_change
+14871_4_5,14871,00014871_004.png,00014871_005.png,4,5,AP,AP,True,Effusion|Infiltration,Atelectasis|Consolidation|Pneumonia,new,absent,new,absent,resolved,new,absent,4,True,multi_change
+18360_9_10,18360,00018360_009.png,00018360_010.png,9,10,AP,AP,True,Edema|Effusion,Atelectasis|Effusion|Infiltration,new,absent,absent,resolved,persistent,absent,absent,2,True,multi_change
+19019_0_1,19019,00019019_000.png,00019019_001.png,0,1,PA,PA,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+3996_19_20,3996,00003996_019.png,00003996_020.png,19,20,PA,PA,True,Atelectasis|Infiltration,Effusion|Infiltration,resolved,absent,absent,absent,new,absent,absent,2,True,multi_change
+18126_29_30,18126,00018126_029.png,00018126_030.png,29,30,AP,AP,True,No Finding,Consolidation|Nodule,absent,absent,new,absent,absent,absent,absent,1,True,single_change
+17167_1_2,17167,00017167_001.png,00017167_002.png,1,2,PA,PA,True,Atelectasis|Infiltration,No Finding,resolved,absent,absent,absent,absent,absent,absent,1,True,single_change
+13625_36_37,13625,00013625_036.png,00013625_037.png,36,37,AP,AP,True,No Finding,Effusion,absent,absent,absent,absent,new,absent,absent,1,True,single_change
+25977_6_7,25977,00025977_006.png,00025977_007.png,6,7,AP,AP,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+28774_2_3,28774,00028774_002.png,00028774_003.png,2,3,AP,AP,True,Consolidation|Edema|Effusion,Infiltration,absent,absent,resolved,resolved,resolved,absent,absent,3,True,multi_change
+12233_1_2,12233,00012233_001.png,00012233_002.png,1,2,AP,AP,True,No Finding,Pneumothorax,absent,absent,absent,absent,absent,absent,new,1,True,single_change
+18681_3_4,18681,00018681_003.png,00018681_004.png,3,4,AP,AP,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+20185_10_11,20185,00020185_010.png,00020185_011.png,10,11,AP,AP,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+9378_5_6,9378,00009378_005.png,00009378_006.png,5,6,PA,PA,True,Effusion,No Finding,absent,absent,absent,absent,resolved,absent,absent,1,True,single_change
+10294_7_8,10294,00010294_007.png,00010294_008.png,7,8,AP,AP,True,Consolidation,No Finding,absent,absent,resolved,absent,absent,absent,absent,1,True,single_change
+6381_12_13,6381,00006381_012.png,00006381_013.png,12,13,AP,AP,True,Infiltration,Effusion,absent,absent,absent,absent,new,absent,absent,1,True,single_change
+7624_29_30,7624,00007624_029.png,00007624_030.png,29,30,AP,AP,True,Atelectasis,No Finding,resolved,absent,absent,absent,absent,absent,absent,1,True,single_change
+21627_2_3,21627,00021627_002.png,00021627_003.png,2,3,AP,AP,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+15384_6_7,15384,00015384_006.png,00015384_007.png,6,7,PA,PA,True,Emphysema|Mass,Emphysema,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+11130_8_9,11130,00011130_008.png,00011130_009.png,8,9,AP,AP,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+13988_2_3,13988,00013988_002.png,00013988_003.png,2,3,AP,AP,True,No Finding,Consolidation|Infiltration,absent,absent,new,absent,absent,absent,absent,1,True,single_change
+25752_0_1,25752,00025752_000.png,00025752_001.png,0,1,AP,AP,True,Atelectasis,Consolidation,resolved,absent,new,absent,absent,absent,absent,2,True,multi_change
+12376_1_2,12376,00012376_001.png,00012376_002.png,1,2,PA,PA,True,Consolidation|Effusion|Mass|Nodule,Effusion|Nodule,absent,absent,resolved,absent,persistent,absent,absent,1,True,single_change
+16490_16_17,16490,00016490_016.png,00016490_017.png,16,17,AP,AP,True,Atelectasis|Consolidation|Edema,Atelectasis,persistent,absent,resolved,resolved,absent,absent,absent,2,True,multi_change
+25285_0_1,25285,00025285_000.png,00025285_001.png,0,1,AP,AP,True,Atelectasis,Effusion|Infiltration,resolved,absent,absent,absent,new,absent,absent,2,True,multi_change
+7857_14_15,7857,00007857_014.png,00007857_015.png,14,15,AP,AP,True,No Finding,Atelectasis|Consolidation|Edema|Effusion,new,absent,new,new,new,absent,absent,4,True,multi_change
+22977_11_12,22977,00022977_011.png,00022977_012.png,11,12,AP,AP,True,Infiltration|Mass|Nodule|Pleural_Thickening,Effusion|Infiltration|Mass|Nodule|Pleural_Thickening,absent,absent,absent,absent,new,absent,absent,1,True,single_change
+4533_3_4,4533,00004533_003.png,00004533_004.png,3,4,PA,PA,True,Infiltration,Atelectasis,new,absent,absent,absent,absent,absent,absent,1,True,single_change
+26016_2_3,26016,00026016_002.png,00026016_003.png,2,3,AP,AP,True,No Finding,Edema|Effusion,absent,absent,absent,new,new,absent,absent,2,True,multi_change
+5712_0_1,5712,00005712_000.png,00005712_001.png,0,1,PA,PA,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+18394_0_1,18394,00018394_000.png,00018394_001.png,0,1,PA,PA,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+29404_5_6,29404,00029404_005.png,00029404_006.png,5,6,AP,AP,True,No Finding,Effusion,absent,absent,absent,absent,new,absent,absent,1,True,single_change
+29579_4_5,29579,00029579_004.png,00029579_005.png,4,5,PA,PA,True,Infiltration|Pneumothorax,Effusion|Nodule|Pleural_Thickening,absent,absent,absent,absent,new,absent,resolved,2,True,multi_change
+14716_2_3,14716,00014716_002.png,00014716_003.png,2,3,AP,AP,True,Infiltration,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+4180_3_4,4180,00004180_003.png,00004180_004.png,3,4,PA,PA,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+15732_27_28,15732,00015732_027.png,00015732_028.png,27,28,AP,AP,True,Effusion,Atelectasis|Edema|Effusion,new,absent,absent,new,persistent,absent,absent,2,True,multi_change
+26562_33_34,26562,00026562_033.png,00026562_034.png,33,34,PA,PA,True,Effusion,Pleural_Thickening,absent,absent,absent,absent,resolved,absent,absent,1,True,single_change
+8051_45_46,8051,00008051_045.png,00008051_046.png,45,46,AP,AP,True,Atelectasis,No Finding,resolved,absent,absent,absent,absent,absent,absent,1,True,single_change
+27357_9_10,27357,00027357_009.png,00027357_010.png,9,10,AP,AP,True,Mass|Pneumothorax,Consolidation,absent,absent,new,absent,absent,absent,resolved,2,True,multi_change
+9397_9_10,9397,00009397_009.png,00009397_010.png,9,10,AP,AP,True,Nodule,Nodule,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+17467_8_9,17467,00017467_008.png,00017467_009.png,8,9,PA,PA,True,Effusion|Mass,Mass,absent,absent,absent,absent,resolved,absent,absent,1,True,single_change
+9845_40_41,9845,00009845_040.png,00009845_041.png,40,41,AP,AP,True,Effusion,No Finding,absent,absent,absent,absent,resolved,absent,absent,1,True,single_change
+19804_1_2,19804,00019804_001.png,00019804_002.png,1,2,AP,AP,True,No Finding,Atelectasis,new,absent,absent,absent,absent,absent,absent,1,True,single_change
+29672_11_12,29672,00029672_011.png,00029672_012.png,11,12,AP,AP,True,Effusion,Consolidation,absent,absent,new,absent,resolved,absent,absent,2,True,multi_change
+8251_5_6,8251,00008251_005.png,00008251_006.png,5,6,AP,AP,True,No Finding,Atelectasis|Infiltration,new,absent,absent,absent,absent,absent,absent,1,True,single_change
+23093_13_14,23093,00023093_013.png,00023093_014.png,13,14,AP,AP,True,Infiltration,Cardiomegaly|Effusion,absent,new,absent,absent,new,absent,absent,2,True,multi_change
+27465_0_1,27465,00027465_000.png,00027465_001.png,0,1,PA,PA,True,Effusion|Mass|Pleural_Thickening,No Finding,absent,absent,absent,absent,resolved,absent,absent,1,True,single_change
+26555_6_7,26555,00026555_006.png,00026555_007.png,6,7,PA,PA,True,Edema|Effusion|Infiltration,Atelectasis,new,absent,absent,resolved,resolved,absent,absent,3,True,multi_change
+26145_2_3,26145,00026145_002.png,00026145_003.png,2,3,AP,AP,True,Effusion|Nodule,No Finding,absent,absent,absent,absent,resolved,absent,absent,1,True,single_change
+882_6_7,882,00000882_006.png,00000882_007.png,6,7,PA,PA,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+17138_34_35,17138,00017138_034.png,00017138_035.png,34,35,AP,AP,True,Effusion,Effusion,absent,absent,absent,absent,persistent,absent,absent,0,False,unchanged
+1528_1_2,1528,00001528_001.png,00001528_002.png,1,2,AP,AP,True,No Finding,Infiltration,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+5348_7_8,5348,00005348_007.png,00005348_008.png,7,8,AP,AP,True,Atelectasis,No Finding,resolved,absent,absent,absent,absent,absent,absent,1,True,single_change
+13118_1_2,13118,00013118_001.png,00013118_002.png,1,2,PA,PA,True,Nodule,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+19124_91_92,19124,00019124_091.png,00019124_092.png,91,92,PA,PA,True,Pneumothorax,Atelectasis|Mass,new,absent,absent,absent,absent,absent,resolved,2,True,multi_change
+15264_3_4,15264,00015264_003.png,00015264_004.png,3,4,AP,AP,True,Edema,No Finding,absent,absent,absent,resolved,absent,absent,absent,1,True,single_change
+21091_1_2,21091,00021091_001.png,00021091_002.png,1,2,PA,PA,True,Infiltration,Atelectasis|Pneumonia,new,absent,absent,absent,absent,new,absent,2,True,multi_change
+18921_23_24,18921,00018921_023.png,00018921_024.png,23,24,AP,AP,True,Effusion|Pneumothorax,Effusion|Pneumothorax,absent,absent,absent,absent,persistent,absent,persistent,0,False,unchanged
+27584_3_4,27584,00027584_003.png,00027584_004.png,3,4,PA,PA,True,Effusion|Infiltration,Atelectasis|Effusion,new,absent,absent,absent,persistent,absent,absent,1,True,single_change
+8607_0_1,8607,00008607_000.png,00008607_001.png,0,1,PA,PA,True,No Finding,Effusion|Infiltration|Pneumothorax,absent,absent,absent,absent,new,absent,new,2,True,multi_change
+28572_16_17,28572,00028572_016.png,00028572_017.png,16,17,PA,PA,True,Atelectasis|Emphysema|Pneumothorax,Atelectasis|Pleural_Thickening|Pneumothorax,persistent,absent,absent,absent,absent,absent,persistent,0,False,unchanged
+17747_12_13,17747,00017747_012.png,00017747_013.png,12,13,PA,PA,True,Infiltration|Pneumothorax,No Finding,absent,absent,absent,absent,absent,absent,resolved,1,True,single_change
+1872_11_12,1872,00001872_011.png,00001872_012.png,11,12,PA,PA,True,No Finding,Atelectasis|Pleural_Thickening,new,absent,absent,absent,absent,absent,absent,1,True,single_change
+3722_15_16,3722,00003722_015.png,00003722_016.png,15,16,PA,PA,True,Atelectasis|Effusion|Infiltration,Atelectasis|Effusion|Infiltration,persistent,absent,absent,absent,persistent,absent,absent,0,False,unchanged
+3527_1_2,3527,00003527_001.png,00003527_002.png,1,2,PA,PA,True,Pneumothorax,Atelectasis|Pneumonia,new,absent,absent,absent,absent,new,resolved,3,True,multi_change
+11814_30_31,11814,00011814_030.png,00011814_031.png,30,31,AP,AP,True,Consolidation|Effusion|Pneumothorax,Consolidation|Effusion,absent,absent,persistent,absent,persistent,absent,resolved,1,True,single_change
+10752_12_13,10752,00010752_012.png,00010752_013.png,12,13,PA,PA,True,Atelectasis|Effusion,Atelectasis,persistent,absent,absent,absent,resolved,absent,absent,1,True,single_change
+13670_91_92,13670,00013670_091.png,00013670_092.png,91,92,AP,AP,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+21383_4_5,21383,00021383_004.png,00021383_005.png,4,5,PA,PA,True,Infiltration,Atelectasis,new,absent,absent,absent,absent,absent,absent,1,True,single_change
+3459_12_13,3459,00003459_012.png,00003459_013.png,12,13,AP,AP,True,Infiltration,Infiltration,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+20130_11_12,20130,00020130_011.png,00020130_012.png,11,12,PA,PA,True,Cardiomegaly|Effusion,No Finding,absent,resolved,absent,absent,resolved,absent,absent,2,True,multi_change
+29146_3_4,29146,00029146_003.png,00029146_004.png,3,4,PA,PA,True,Atelectasis|Effusion|Pneumothorax,Effusion,resolved,absent,absent,absent,persistent,absent,resolved,2,True,multi_change
+14223_17_18,14223,00014223_017.png,00014223_018.png,17,18,AP,AP,True,No Finding,Effusion,absent,absent,absent,absent,new,absent,absent,1,True,single_change
+5681_22_23,5681,00005681_022.png,00005681_023.png,22,23,AP,AP,True,Pneumothorax,Consolidation,absent,absent,new,absent,absent,absent,resolved,2,True,multi_change
+20072_0_1,20072,00020072_000.png,00020072_001.png,0,1,PA,PA,True,No Finding,Fibrosis|Nodule,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+20146_13_14,20146,00020146_013.png,00020146_014.png,13,14,PA,PA,True,No Finding,Atelectasis|Effusion|Mass|Pneumothorax,new,absent,absent,absent,new,absent,new,3,True,multi_change
+14129_8_9,14129,00014129_008.png,00014129_009.png,8,9,AP,AP,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+17138_64_65,17138,00017138_064.png,00017138_065.png,64,65,AP,AP,True,Infiltration,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+16732_40_41,16732,00016732_040.png,00016732_041.png,40,41,PA,PA,True,Atelectasis|Cardiomegaly|Infiltration,Cardiomegaly|Effusion|Pneumothorax,resolved,persistent,absent,absent,new,absent,new,3,True,multi_change
+16675_0_1,16675,00016675_000.png,00016675_001.png,0,1,PA,PA,True,Infiltration,Effusion|Infiltration|Pleural_Thickening,absent,absent,absent,absent,new,absent,absent,1,True,single_change
+15530_67_68,15530,00015530_067.png,00015530_068.png,67,68,AP,AP,True,Emphysema|Pneumothorax,Emphysema|Pneumothorax,absent,absent,absent,absent,absent,absent,persistent,0,False,unchanged
+7624_30_31,7624,00007624_030.png,00007624_031.png,30,31,AP,AP,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+23068_51_52,23068,00023068_051.png,00023068_052.png,51,52,AP,AP,True,Atelectasis,Edema|Infiltration|Nodule,resolved,absent,absent,new,absent,absent,absent,2,True,multi_change
+6996_4_5,6996,00006996_004.png,00006996_005.png,4,5,AP,AP,True,Atelectasis|Effusion|Infiltration,No Finding,resolved,absent,absent,absent,resolved,absent,absent,2,True,multi_change
+174_1_2,174,00000174_001.png,00000174_002.png,1,2,PA,PA,True,Infiltration|Nodule,Nodule,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+3601_12_13,3601,00003601_012.png,00003601_013.png,12,13,PA,PA,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+18949_1_2,18949,00018949_001.png,00018949_002.png,1,2,AP,AP,True,Atelectasis,Pleural_Thickening,resolved,absent,absent,absent,absent,absent,absent,1,True,single_change
+7624_11_12,7624,00007624_011.png,00007624_012.png,11,12,AP,AP,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+20652_0_1,20652,00020652_000.png,00020652_001.png,0,1,AP,AP,True,Effusion,Effusion,absent,absent,absent,absent,persistent,absent,absent,0,False,unchanged
+18187_61_62,18187,00018187_061.png,00018187_062.png,61,62,AP,AP,True,Consolidation|Edema|Effusion,Edema|Infiltration,absent,absent,resolved,persistent,resolved,absent,absent,2,True,multi_change
+4381_32_33,4381,00004381_032.png,00004381_033.png,32,33,AP,AP,True,Consolidation|Effusion,No Finding,absent,absent,resolved,absent,resolved,absent,absent,2,True,multi_change
+20716_3_4,20716,00020716_003.png,00020716_004.png,3,4,AP,AP,True,No Finding,Edema,absent,absent,absent,new,absent,absent,absent,1,True,single_change
+14004_27_28,14004,00014004_027.png,00014004_028.png,27,28,AP,AP,True,Edema|Pneumonia,Consolidation,absent,absent,new,resolved,absent,resolved,absent,3,True,multi_change
+7157_24_25,7157,00007157_024.png,00007157_025.png,24,25,AP,AP,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+6835_0_1,6835,00006835_000.png,00006835_001.png,0,1,PA,PA,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+18642_4_5,18642,00018642_004.png,00018642_005.png,4,5,PA,PA,True,No Finding,Atelectasis,new,absent,absent,absent,absent,absent,absent,1,True,single_change
+14424_0_1,14424,00014424_000.png,00014424_001.png,0,1,PA,PA,True,No Finding,Atelectasis|Cardiomegaly|Infiltration,new,new,absent,absent,absent,absent,absent,2,True,multi_change
+16142_45_46,16142,00016142_045.png,00016142_046.png,45,46,PA,PA,True,Atelectasis|Pneumothorax,No Finding,resolved,absent,absent,absent,absent,absent,resolved,2,True,multi_change
+13615_57_58,13615,00013615_057.png,00013615_058.png,57,58,AP,AP,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+26810_9_10,26810,00026810_009.png,00026810_010.png,9,10,AP,AP,True,Atelectasis|Consolidation|Pneumothorax,Edema|Infiltration,resolved,absent,resolved,new,absent,absent,resolved,4,True,multi_change
+13249_56_57,13249,00013249_056.png,00013249_057.png,56,57,PA,PA,True,Infiltration|Pneumonia,Consolidation,absent,absent,new,absent,absent,resolved,absent,2,True,multi_change
+1029_1_2,1029,00001029_001.png,00001029_002.png,1,2,AP,AP,True,No Finding,Pneumothorax,absent,absent,absent,absent,absent,absent,new,1,True,single_change
+2704_1_2,2704,00002704_001.png,00002704_002.png,1,2,PA,PA,True,No Finding,Atelectasis,new,absent,absent,absent,absent,absent,absent,1,True,single_change
+1308_1_2,1308,00001308_001.png,00001308_002.png,1,2,PA,PA,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+23138_10_11,23138,00023138_010.png,00023138_011.png,10,11,AP,AP,True,Consolidation,Consolidation,absent,absent,persistent,absent,absent,absent,absent,0,False,unchanged
+27357_13_14,27357,00027357_013.png,00027357_014.png,13,14,AP,AP,True,Infiltration|Nodule,Cardiomegaly|Effusion|Infiltration,absent,new,absent,absent,new,absent,absent,2,True,multi_change
+4344_38_39,4344,00004344_038.png,00004344_039.png,38,39,AP,AP,True,Cardiomegaly,Cardiomegaly|Infiltration,absent,persistent,absent,absent,absent,absent,absent,0,False,unchanged
+2046_4_5,2046,00002046_004.png,00002046_005.png,4,5,PA,PA,True,Infiltration,Mass,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+14032_1_2,14032,00014032_001.png,00014032_002.png,1,2,PA,PA,True,No Finding,Atelectasis|Nodule,new,absent,absent,absent,absent,absent,absent,1,True,single_change
+18513_3_4,18513,00018513_003.png,00018513_004.png,3,4,PA,PA,True,Atelectasis,Atelectasis|Consolidation|Effusion,persistent,absent,new,absent,new,absent,absent,2,True,multi_change
+4682_8_9,4682,00004682_008.png,00004682_009.png,8,9,PA,PA,True,Consolidation|Effusion|Infiltration,Infiltration,absent,absent,resolved,absent,resolved,absent,absent,2,True,multi_change
+16587_75_76,16587,00016587_075.png,00016587_076.png,75,76,PA,PA,True,Emphysema,Emphysema,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+12484_1_2,12484,00012484_001.png,00012484_002.png,1,2,PA,PA,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+10478_11_12,10478,00010478_011.png,00010478_012.png,11,12,AP,AP,True,Effusion|Mass,Atelectasis|Cardiomegaly,new,new,absent,absent,resolved,absent,absent,3,True,multi_change
+15045_19_20,15045,00015045_019.png,00015045_020.png,19,20,AP,AP,True,Consolidation,Effusion|Infiltration,absent,absent,resolved,absent,new,absent,absent,2,True,multi_change
+18366_14_15,18366,00018366_014.png,00018366_015.png,14,15,AP,AP,True,No Finding,Pneumothorax,absent,absent,absent,absent,absent,absent,new,1,True,single_change
+8009_32_33,8009,00008009_032.png,00008009_033.png,32,33,AP,AP,True,No Finding,Infiltration,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+19219_7_8,19219,00019219_007.png,00019219_008.png,7,8,PA,PA,True,Atelectasis|Cardiomegaly|Effusion|Nodule|Pleural_Thickening,No Finding,resolved,resolved,absent,absent,resolved,absent,absent,3,True,multi_change
+6500_2_3,6500,00006500_002.png,00006500_003.png,2,3,PA,PA,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+11966_8_9,11966,00011966_008.png,00011966_009.png,8,9,AP,AP,True,Infiltration,Consolidation|Infiltration,absent,absent,new,absent,absent,absent,absent,1,True,single_change
+591_8_9,591,00000591_008.png,00000591_009.png,8,9,PA,PA,True,Atelectasis|Consolidation,Effusion,resolved,absent,resolved,absent,new,absent,absent,3,True,multi_change
+10594_5_6,10594,00010594_005.png,00010594_006.png,5,6,PA,PA,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+3072_14_15,3072,00003072_014.png,00003072_015.png,14,15,PA,PA,True,Atelectasis|Effusion|Infiltration|Pleural_Thickening|Pneumothorax,Pneumothorax,resolved,absent,absent,absent,resolved,absent,persistent,2,True,multi_change
+4582_8_9,4582,00004582_008.png,00004582_009.png,8,9,PA,PA,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+16128_0_1,16128,00016128_000.png,00016128_001.png,0,1,PA,PA,True,Infiltration,Effusion,absent,absent,absent,absent,new,absent,absent,1,True,single_change
+6304_37_38,6304,00006304_037.png,00006304_038.png,37,38,AP,AP,True,Infiltration,Infiltration,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+10555_0_1,10555,00010555_000.png,00010555_001.png,0,1,PA,PA,True,Atelectasis|Fibrosis,No Finding,resolved,absent,absent,absent,absent,absent,absent,1,True,single_change
+5348_16_17,5348,00005348_016.png,00005348_017.png,16,17,AP,AP,True,Atelectasis|Infiltration,Edema|Infiltration,resolved,absent,absent,new,absent,absent,absent,2,True,multi_change
+29373_3_4,29373,00029373_003.png,00029373_004.png,3,4,PA,PA,True,Atelectasis|Effusion|Infiltration,Cardiomegaly|Effusion,resolved,new,absent,absent,persistent,absent,absent,2,True,multi_change
+14616_11_12,14616,00014616_011.png,00014616_012.png,11,12,AP,AP,True,Pneumonia,Effusion|Infiltration,absent,absent,absent,absent,new,resolved,absent,2,True,multi_change
+5681_28_29,5681,00005681_028.png,00005681_029.png,28,29,AP,AP,True,Emphysema|Infiltration,Emphysema|Infiltration,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+19706_5_6,19706,00019706_005.png,00019706_006.png,5,6,PA,PA,True,Atelectasis|Effusion,Atelectasis|Effusion|Pneumothorax,persistent,absent,absent,absent,persistent,absent,new,1,True,single_change
+17423_5_6,17423,00017423_005.png,00017423_006.png,5,6,PA,PA,True,No Finding,Mass,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+13175_14_15,13175,00013175_014.png,00013175_015.png,14,15,PA,PA,True,Nodule,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+4911_30_31,4911,00004911_030.png,00004911_031.png,30,31,AP,AP,True,Effusion|Mass,Infiltration,absent,absent,absent,absent,resolved,absent,absent,1,True,single_change
+8009_27_28,8009,00008009_027.png,00008009_028.png,27,28,AP,AP,True,Infiltration|Nodule,Consolidation|Infiltration|Nodule,absent,absent,new,absent,absent,absent,absent,1,True,single_change
+8919_1_2,8919,00008919_001.png,00008919_002.png,1,2,PA,PA,True,Pneumothorax,No Finding,absent,absent,absent,absent,absent,absent,resolved,1,True,single_change
+18187_9_10,18187,00018187_009.png,00018187_010.png,9,10,AP,AP,True,No Finding,Cardiomegaly|Effusion,absent,new,absent,absent,new,absent,absent,2,True,multi_change
+15384_3_4,15384,00015384_003.png,00015384_004.png,3,4,PA,PA,True,Atelectasis|Mass|Pneumothorax,No Finding,resolved,absent,absent,absent,absent,absent,resolved,2,True,multi_change
+5476_0_1,5476,00005476_000.png,00005476_001.png,0,1,AP,AP,True,Atelectasis,No Finding,resolved,absent,absent,absent,absent,absent,absent,1,True,single_change
+10863_0_1,10863,00010863_000.png,00010863_001.png,0,1,PA,PA,True,Effusion|Infiltration,Effusion|Fibrosis,absent,absent,absent,absent,persistent,absent,absent,0,False,unchanged
+19981_5_6,19981,00019981_005.png,00019981_006.png,5,6,PA,PA,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+11478_3_4,11478,00011478_003.png,00011478_004.png,3,4,PA,PA,True,Mass,Mass,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+26715_1_2,26715,00026715_001.png,00026715_002.png,1,2,PA,PA,True,Atelectasis|Emphysema|Infiltration|Pneumonia,Cardiomegaly|Effusion|Emphysema|Infiltration,resolved,new,absent,absent,new,resolved,absent,4,True,multi_change
+23696_4_5,23696,00023696_004.png,00023696_005.png,4,5,PA,PA,True,Atelectasis,No Finding,resolved,absent,absent,absent,absent,absent,absent,1,True,single_change
+10577_0_1,10577,00010577_000.png,00010577_001.png,0,1,PA,PA,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+22071_2_3,22071,00022071_002.png,00022071_003.png,2,3,PA,PA,True,Atelectasis|Consolidation|Mass,Atelectasis|Mass,persistent,absent,resolved,absent,absent,absent,absent,1,True,single_change
+26825_5_6,26825,00026825_005.png,00026825_006.png,5,6,AP,AP,True,Atelectasis|Effusion|Mass,Cardiomegaly|Effusion,resolved,new,absent,absent,persistent,absent,absent,2,True,multi_change
+22672_5_6,22672,00022672_005.png,00022672_006.png,5,6,AP,AP,True,Cardiomegaly|Effusion|Pleural_Thickening,Edema|Infiltration|Pneumonia,absent,resolved,absent,new,resolved,new,absent,4,True,multi_change
+15649_2_3,15649,00015649_002.png,00015649_003.png,2,3,PA,PA,True,Atelectasis|Consolidation|Effusion|Mass|Nodule,Mass|Pleural_Thickening,resolved,absent,resolved,absent,resolved,absent,absent,3,True,multi_change
+21154_1_2,21154,00021154_001.png,00021154_002.png,1,2,AP,AP,True,No Finding,Effusion|Pneumothorax,absent,absent,absent,absent,new,absent,new,2,True,multi_change
+11862_2_3,11862,00011862_002.png,00011862_003.png,2,3,AP,AP,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+1738_2_3,1738,00001738_002.png,00001738_003.png,2,3,PA,PA,True,Nodule,Nodule,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+8291_12_13,8291,00008291_012.png,00008291_013.png,12,13,AP,AP,True,Edema,Infiltration,absent,absent,absent,resolved,absent,absent,absent,1,True,single_change
+22559_2_3,22559,00022559_002.png,00022559_003.png,2,3,PA,PA,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+15605_29_30,15605,00015605_029.png,00015605_030.png,29,30,AP,AP,True,Edema,Consolidation|Infiltration,absent,absent,new,resolved,absent,absent,absent,2,True,multi_change
+13951_0_1,13951,00013951_000.png,00013951_001.png,0,1,PA,PA,True,Infiltration,Nodule,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+19658_6_7,19658,00019658_006.png,00019658_007.png,6,7,PA,PA,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+10709_5_6,10709,00010709_005.png,00010709_006.png,5,6,AP,AP,True,No Finding,Atelectasis,new,absent,absent,absent,absent,absent,absent,1,True,single_change
+1200_12_13,1200,00001200_012.png,00001200_013.png,12,13,AP,AP,True,Edema|Effusion|Infiltration,Edema|Effusion|Infiltration,absent,absent,absent,persistent,persistent,absent,absent,0,False,unchanged
+13391_8_9,13391,00013391_008.png,00013391_009.png,8,9,PA,PA,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+22416_26_27,22416,00022416_026.png,00022416_027.png,26,27,AP,AP,True,Effusion,Consolidation|Infiltration,absent,absent,new,absent,resolved,absent,absent,2,True,multi_change
+7034_21_22,7034,00007034_021.png,00007034_022.png,21,22,AP,AP,True,No Finding,Atelectasis|Effusion,new,absent,absent,absent,new,absent,absent,2,True,multi_change
+10586_2_3,10586,00010586_002.png,00010586_003.png,2,3,PA,PA,True,Consolidation|Nodule,No Finding,absent,absent,resolved,absent,absent,absent,absent,1,True,single_change
+13256_10_11,13256,00013256_010.png,00013256_011.png,10,11,AP,AP,True,Nodule,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+19635_5_6,19635,00019635_005.png,00019635_006.png,5,6,PA,PA,True,Atelectasis|Effusion|Emphysema|Mass|Pleural_Thickening,Emphysema|Nodule,resolved,absent,absent,absent,resolved,absent,absent,2,True,multi_change
+29654_0_1,29654,00029654_000.png,00029654_001.png,0,1,AP,AP,True,Edema|Infiltration|Pneumonia,Effusion|Infiltration,absent,absent,absent,resolved,new,resolved,absent,3,True,multi_change
+21779_1_2,21779,00021779_001.png,00021779_002.png,1,2,PA,PA,True,Infiltration,Infiltration,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+29006_1_2,29006,00029006_001.png,00029006_002.png,1,2,PA,PA,True,No Finding,Infiltration,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+16786_1_2,16786,00016786_001.png,00016786_002.png,1,2,AP,AP,True,Infiltration|Pneumonia,Atelectasis|Consolidation|Edema|Infiltration,new,absent,new,new,absent,resolved,absent,4,True,multi_change
+831_5_6,831,00000831_005.png,00000831_006.png,5,6,AP,AP,True,No Finding,Consolidation|Infiltration|Nodule,absent,absent,new,absent,absent,absent,absent,1,True,single_change
+19663_2_3,19663,00019663_002.png,00019663_003.png,2,3,PA,PA,True,Atelectasis|Pleural_Thickening,Effusion,resolved,absent,absent,absent,new,absent,absent,2,True,multi_change
+15653_3_4,15653,00015653_003.png,00015653_004.png,3,4,AP,AP,True,No Finding,Atelectasis,new,absent,absent,absent,absent,absent,absent,1,True,single_change
+1122_4_5,1122,00001122_004.png,00001122_005.png,4,5,AP,AP,True,Atelectasis|Consolidation,Atelectasis,persistent,absent,resolved,absent,absent,absent,absent,1,True,single_change
+11237_33_34,11237,00011237_033.png,00011237_034.png,33,34,AP,AP,True,Consolidation,No Finding,absent,absent,resolved,absent,absent,absent,absent,1,True,single_change
+8030_3_4,8030,00008030_003.png,00008030_004.png,3,4,AP,AP,True,No Finding,Effusion|Infiltration,absent,absent,absent,absent,new,absent,absent,1,True,single_change
+19773_6_7,19773,00019773_006.png,00019773_007.png,6,7,AP,AP,True,Pneumothorax,No Finding,absent,absent,absent,absent,absent,absent,resolved,1,True,single_change
+6585_10_11,6585,00006585_010.png,00006585_011.png,10,11,AP,AP,True,Infiltration|Mass,Infiltration|Pneumothorax,absent,absent,absent,absent,absent,absent,new,1,True,single_change
+28774_21_22,28774,00028774_021.png,00028774_022.png,21,22,AP,AP,True,Cardiomegaly|Effusion,No Finding,absent,resolved,absent,absent,resolved,absent,absent,2,True,multi_change
+13304_3_4,13304,00013304_003.png,00013304_004.png,3,4,PA,PA,True,No Finding,Infiltration|Pleural_Thickening,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+19176_35_36,19176,00019176_035.png,00019176_036.png,35,36,AP,AP,True,Consolidation,Atelectasis|Consolidation|Effusion,new,absent,persistent,absent,new,absent,absent,2,True,multi_change
+10350_23_24,10350,00010350_023.png,00010350_024.png,23,24,AP,AP,True,Edema,Edema|Effusion,absent,absent,absent,persistent,new,absent,absent,1,True,single_change
+5403_12_13,5403,00005403_012.png,00005403_013.png,12,13,AP,AP,True,Infiltration,Effusion|Infiltration,absent,absent,absent,absent,new,absent,absent,1,True,single_change
+16075_5_6,16075,00016075_005.png,00016075_006.png,5,6,AP,AP,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+11404_2_3,11404,00011404_002.png,00011404_003.png,2,3,PA,PA,True,No Finding,Effusion,absent,absent,absent,absent,new,absent,absent,1,True,single_change
+29570_1_2,29570,00029570_001.png,00029570_002.png,1,2,AP,AP,True,Atelectasis|Effusion|Emphysema|Pneumothorax,Atelectasis|Consolidation|Mass,persistent,absent,new,absent,resolved,absent,resolved,3,True,multi_change
+14253_19_20,14253,00014253_019.png,00014253_020.png,19,20,AP,AP,True,Atelectasis,Atelectasis|Effusion|Infiltration,persistent,absent,absent,absent,new,absent,absent,1,True,single_change

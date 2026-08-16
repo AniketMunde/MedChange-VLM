@@ -1,0 +1,11 @@
+{
+  "num_pairs": 200,
+  "seed": 42,
+  "categories": {
+    "single_change": 67,
+    "unchanged": 67,
+    "multi_change": 66
+  },
+  "unique_patients": 190,
+  "duplicate_pair_ids": 0
+}
