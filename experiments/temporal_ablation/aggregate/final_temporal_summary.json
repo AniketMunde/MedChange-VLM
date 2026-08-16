@@ -1,0 +1,93 @@
+[
+  {
+    "finding": "atelectasis",
+    "current_macro_f1_mean": 0.2176234264205085,
+    "current_macro_f1_std": 0.044406416410740834,
+    "best_temporal_feature": "prior_current_delta",
+    "best_temporal_macro_f1_mean": 0.2600605112456903,
+    "best_temporal_macro_f1_std": 0.03068848699111668,
+    "delta_macro_f1": 0.0424370848251818,
+    "temporal_wins_vs_current": 5,
+    "num_seeds": 5,
+    "current_balanced_accuracy_mean": 0.28021159266889406,
+    "best_temporal_balanced_accuracy_mean": 0.36085401954056534
+  },
+  {
+    "finding": "cardiomegaly",
+    "current_macro_f1_mean": 0.25048010746626603,
+    "current_macro_f1_std": 0.04656537168814692,
+    "best_temporal_feature": "full",
+    "best_temporal_macro_f1_mean": 0.3009065950509308,
+    "best_temporal_macro_f1_std": 0.023364526342355335,
+    "delta_macro_f1": 0.05042648758466478,
+    "temporal_wins_vs_current": 5,
+    "num_seeds": 5,
+    "current_balanced_accuracy_mean": 0.4460748850889239,
+    "best_temporal_balanced_accuracy_mean": 0.5731182814216123
+  },
+  {
+    "finding": "consolidation",
+    "current_macro_f1_mean": 0.2815189345795596,
+    "current_macro_f1_std": 0.051165240672323566,
+    "best_temporal_feature": "full",
+    "best_temporal_macro_f1_mean": 0.3000410371205834,
+    "best_temporal_macro_f1_std": 0.02716868644912685,
+    "delta_macro_f1": 0.018522102541023766,
+    "temporal_wins_vs_current": 3,
+    "num_seeds": 5,
+    "current_balanced_accuracy_mean": 0.3652901759917218,
+    "best_temporal_balanced_accuracy_mean": 0.35543614526466943
+  },
+  {
+    "finding": "edema",
+    "current_macro_f1_mean": 0.24258885639203723,
+    "current_macro_f1_std": 0.035758671037252436,
+    "best_temporal_feature": "prior_current",
+    "best_temporal_macro_f1_mean": 0.26287864674772277,
+    "best_temporal_macro_f1_std": 0.039405898956458095,
+    "delta_macro_f1": 0.02028979035568554,
+    "temporal_wins_vs_current": 4,
+    "num_seeds": 5,
+    "current_balanced_accuracy_mean": 0.358939279581942,
+    "best_temporal_balanced_accuracy_mean": 0.4060355972795926
+  },
+  {
+    "finding": "pleural_effusion",
+    "current_macro_f1_mean": 0.32054595323243357,
+    "current_macro_f1_std": 0.04315012536656898,
+    "best_temporal_feature": "prior_current_delta",
+    "best_temporal_macro_f1_mean": 0.33824002338947745,
+    "best_temporal_macro_f1_std": 0.02701609529874711,
+    "delta_macro_f1": 0.017694070157043884,
+    "temporal_wins_vs_current": 2,
+    "num_seeds": 5,
+    "current_balanced_accuracy_mean": 0.3764068990315884,
+    "best_temporal_balanced_accuracy_mean": 0.39149802098210407
+  },
+  {
+    "finding": "pneumonia",
+    "current_macro_f1_mean": 0.24717798220033652,
+    "current_macro_f1_std": 0.02387351279140965,
+    "best_temporal_feature": "prior_current_delta",
+    "best_temporal_macro_f1_mean": 0.26832946154046505,
+    "best_temporal_macro_f1_std": 0.02300847197924225,
+    "delta_macro_f1": 0.021151479340128537,
+    "temporal_wins_vs_current": 4,
+    "num_seeds": 5,
+    "current_balanced_accuracy_mean": 0.5483555956569244,
+    "best_temporal_balanced_accuracy_mean": 0.46004391689206275
+  },
+  {
+    "finding": "pneumothorax",
+    "current_macro_f1_mean": 0.2610316617432312,
+    "current_macro_f1_std": 0.03142580481157336,
+    "best_temporal_feature": "full",
+    "best_temporal_macro_f1_mean": 0.321799117245973,
+    "best_temporal_macro_f1_std": 0.05448830682206766,
+    "delta_macro_f1": 0.06076745550274176,
+    "temporal_wins_vs_current": 5,
+    "num_seeds": 5,
+    "current_balanced_accuracy_mean": 0.34571128261825623,
+    "best_temporal_balanced_accuracy_mean": 0.42829125092629566
+  }
+]

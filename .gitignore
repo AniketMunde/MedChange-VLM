@@ -75,3 +75,14 @@ huggingface/
 # Temporary files
 tmp/
 temp/
+
+# NIH generated temporal artifacts
+data/nih/Data_Entry_2017.csv
+data/nih/longitudinal_pairs.csv
+data/nih/longitudinal_pairs_same_view.csv
+data/nih/temporal_pairs_same_view.csv
+data/nih/temporal_eval_subset.csv
+
+# Temporal embedding cache
+data/nih/embedding_cache/
+data/nih/temporal_eval_200.csv

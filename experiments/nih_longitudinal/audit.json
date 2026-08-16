@@ -1,0 +1,19 @@
+{
+  "num_images": 112120,
+  "num_patients": 30805,
+  "num_repeated_patients": 13302,
+  "fraction_repeated_patients": 0.4318130173673105,
+  "max_studies_per_patient": 184,
+  "adjacent_pair_count": 81315,
+  "same_view_pair_count": 61219,
+  "same_view_pair_fraction": 0.7528623255241961,
+  "follow_up_delta_counts": {
+    "1": 81315
+  },
+  "view_transition_counts": {
+    "PA->PA": 30916,
+    "PA->AP": 10939,
+    "AP->AP": 30303,
+    "AP->PA": 9157
+  }
+}
