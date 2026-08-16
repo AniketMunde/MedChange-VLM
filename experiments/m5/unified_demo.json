@@ -1,0 +1,95 @@
+{
+  "pair_id": "8185_6_7",
+  "prior_study_id": "00008185_006",
+  "current_study_id": "00008185_007",
+  "findings": [
+    {
+      "finding": "atelectasis",
+      "final_state": "new",
+      "biomedclip_state": "new",
+      "qwen_state": "new",
+      "biomedclip_confidence": 0.78,
+      "qwen_confidence": 0.82,
+      "agreement": "high",
+      "uncertainty": "low",
+      "evidence": "New opacity is visible on the current image.",
+      "requires_review": false
+    },
+    {
+      "finding": "cardiomegaly",
+      "final_state": "absent",
+      "biomedclip_state": "absent",
+      "qwen_state": "absent",
+      "biomedclip_confidence": 0.91,
+      "qwen_confidence": 0.95,
+      "agreement": "high",
+      "uncertainty": "low",
+      "evidence": "No interval cardiac enlargement.",
+      "requires_review": false
+    },
+    {
+      "finding": "consolidation",
+      "final_state": "absent",
+      "biomedclip_state": "absent",
+      "qwen_state": "absent",
+      "biomedclip_confidence": 0.86,
+      "qwen_confidence": 0.96,
+      "agreement": "high",
+      "uncertainty": "low",
+      "evidence": "No focal consolidation is identified.",
+      "requires_review": false
+    },
+    {
+      "finding": "edema",
+      "final_state": "absent",
+      "biomedclip_state": "absent",
+      "qwen_state": "absent",
+      "biomedclip_confidence": 0.92,
+      "qwen_confidence": 0.95,
+      "agreement": "high",
+      "uncertainty": "low",
+      "evidence": "No convincing interval pulmonary edema.",
+      "requires_review": false
+    },
+    {
+      "finding": "pleural_effusion",
+      "final_state": "absent",
+      "biomedclip_state": "absent",
+      "qwen_state": "absent",
+      "biomedclip_confidence": 0.89,
+      "qwen_confidence": 0.96,
+      "agreement": "high",
+      "uncertainty": "low",
+      "evidence": "No pleural effusion is identified.",
+      "requires_review": false
+    },
+    {
+      "finding": "pneumonia",
+      "final_state": "absent",
+      "biomedclip_state": "absent",
+      "qwen_state": "absent",
+      "biomedclip_confidence": 0.84,
+      "qwen_confidence": 0.9,
+      "agreement": "high",
+      "uncertainty": "low",
+      "evidence": "No new focal opacity concerning for pneumonia.",
+      "requires_review": false
+    },
+    {
+      "finding": "pneumothorax",
+      "final_state": "absent",
+      "biomedclip_state": "absent",
+      "qwen_state": "absent",
+      "biomedclip_confidence": 0.95,
+      "qwen_confidence": 0.97,
+      "agreement": "high",
+      "uncertainty": "low",
+      "evidence": "No pneumothorax is identified.",
+      "requires_review": false
+    }
+  ],
+  "overall_change": "worsened",
+  "uncertainty": "low",
+  "requires_review": false,
+  "summary": "atelectasis: new"
+}

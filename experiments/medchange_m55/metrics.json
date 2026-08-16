@@ -1,0 +1,60 @@
+{
+  "models": {
+    "biomedclip": {
+      "n_total": 1400,
+      "n_covered": 1400,
+      "coverage": 1.0,
+      "abstention_rate": 0.0,
+      "selective_accuracy": 1.0,
+      "error_rate_on_covered": 0.0,
+      "selective_macro_f1": 1.0,
+      "review_rate": 0.0,
+      "state_recall": {
+        "absent": 1.0,
+        "new": 1.0,
+        "persistent": 1.0,
+        "resolved": 1.0
+      }
+    },
+    "qwen": {
+      "n_total": 1400,
+      "n_covered": 1400,
+      "coverage": 1.0,
+      "abstention_rate": 0.0,
+      "selective_accuracy": 0.6785714285714286,
+      "error_rate_on_covered": 0.3214285714285714,
+      "selective_macro_f1": 0.2695650340750262,
+      "review_rate": 0.0,
+      "state_recall": {
+        "absent": 0.8022847100175747,
+        "new": 0.23728813559322035,
+        "persistent": 0.0,
+        "resolved": 0.08571428571428572
+      }
+    },
+    "medchange": {
+      "n_total": 1400,
+      "n_covered": 950,
+      "coverage": 0.6785714285714286,
+      "abstention_rate": 0.32142857142857145,
+      "selective_accuracy": 1.0,
+      "error_rate_on_covered": 0.0,
+      "selective_macro_f1": 0.75,
+      "review_rate": 0.32142857142857145,
+      "state_recall": {
+        "absent": 1.0,
+        "new": 1.0,
+        "persistent": null,
+        "resolved": 1.0
+      }
+    }
+  },
+  "pair_metrics": {
+    "num_pairs": 200,
+    "exact_pair_match_rate": 0.05,
+    "pair_abstention_rate": 0.95,
+    "pair_review_rate": 0.95
+  },
+  "conflict_rate": 0.32142857142857145,
+  "uncertainty_rate": 0.32142857142857145
+}

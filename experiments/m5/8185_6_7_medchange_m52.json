@@ -1,0 +1,179 @@
+{
+  "pair_id": "8185_6_7",
+  "prior_study_id": "00008185_006",
+  "current_study_id": "00008185_007",
+  "findings": [
+    {
+      "finding": "atelectasis",
+      "final_state": "uncertain",
+      "biomedclip_state": "absent",
+      "qwen_state": "new",
+      "biomedclip_confidence": 0.7524428367614746,
+      "qwen_confidence": 0.82,
+      "agreement": "conflict",
+      "uncertainty": "high",
+      "evidence": "The current image shows a more prominent opacity in the left lung field compared to the prior image.",
+      "decision_reason": "BiomedCLIP and Qwen produced conflicting temporal states.",
+      "requires_review": true
+    },
+    {
+      "finding": "cardiomegaly",
+      "final_state": "absent",
+      "biomedclip_state": "absent",
+      "qwen_state": "absent",
+      "biomedclip_confidence": 0.9996610879898071,
+      "qwen_confidence": 0.95,
+      "agreement": "high",
+      "uncertainty": "low",
+      "evidence": "Both images show similar cardiac borders without any obvious enlargement.",
+      "decision_reason": "BiomedCLIP and Qwen agree on the temporal state.",
+      "requires_review": false
+    },
+    {
+      "finding": "consolidation",
+      "final_state": "absent",
+      "biomedclip_state": "absent",
+      "qwen_state": "absent",
+      "biomedclip_confidence": 0.9991853833198547,
+      "qwen_confidence": 0.98,
+      "agreement": "high",
+      "uncertainty": "low",
+      "evidence": "No significant areas of consolidation are visible in either image.",
+      "decision_reason": "BiomedCLIP and Qwen agree on the temporal state.",
+      "requires_review": false
+    },
+    {
+      "finding": "edema",
+      "final_state": "absent",
+      "biomedclip_state": "absent",
+      "qwen_state": "absent",
+      "biomedclip_confidence": 0.9999792575836182,
+      "qwen_confidence": 0.99,
+      "agreement": "high",
+      "uncertainty": "low",
+      "evidence": "No signs of pulmonary edema such as pleural effusion or pericardial effusion are evident.",
+      "decision_reason": "BiomedCLIP and Qwen agree on the temporal state.",
+      "requires_review": false
+    },
+    {
+      "finding": "pleural_effusion",
+      "final_state": "absent",
+      "biomedclip_state": "absent",
+      "qwen_state": "absent",
+      "biomedclip_confidence": 0.9994065761566162,
+      "qwen_confidence": 0.99,
+      "agreement": "high",
+      "uncertainty": "low",
+      "evidence": "No fluid accumulation around the lungs is observed in either image.",
+      "decision_reason": "BiomedCLIP and Qwen agree on the temporal state.",
+      "requires_review": false
+    },
+    {
+      "finding": "pneumonia",
+      "final_state": "absent",
+      "biomedclip_state": "absent",
+      "qwen_state": "absent",
+      "biomedclip_confidence": 0.9976262450218201,
+      "qwen_confidence": 0.99,
+      "agreement": "high",
+      "uncertainty": "low",
+      "evidence": "No areas of ground-glass opacities or consolidations consistent with pneumonia are present.",
+      "decision_reason": "BiomedCLIP and Qwen agree on the temporal state.",
+      "requires_review": false
+    },
+    {
+      "finding": "pneumothorax",
+      "final_state": "absent",
+      "biomedclip_state": "absent",
+      "qwen_state": "absent",
+      "biomedclip_confidence": 0.9975505471229553,
+      "qwen_confidence": 0.99,
+      "agreement": "high",
+      "uncertainty": "low",
+      "evidence": "No signs of air trapping or pneumothorax are visible in either image.",
+      "decision_reason": "BiomedCLIP and Qwen agree on the temporal state.",
+      "requires_review": false
+    }
+  ],
+  "overall_change": "uncertain",
+  "uncertainty": "high",
+  "requires_review": true,
+  "summary": "No new or resolved target findings detected.",
+  "model_evidence": {
+    "biomedclip": {
+      "atelectasis": {
+        "state": "absent",
+        "confidence": 0.7524428367614746,
+        "feature_set": "prior_current_delta"
+      },
+      "cardiomegaly": {
+        "state": "absent",
+        "confidence": 0.9996610879898071,
+        "feature_set": "full"
+      },
+      "consolidation": {
+        "state": "absent",
+        "confidence": 0.9991853833198547,
+        "feature_set": "full"
+      },
+      "edema": {
+        "state": "absent",
+        "confidence": 0.9999792575836182,
+        "feature_set": "prior_current"
+      },
+      "pleural_effusion": {
+        "state": "absent",
+        "confidence": 0.9994065761566162,
+        "feature_set": "prior_current_delta"
+      },
+      "pneumonia": {
+        "state": "absent",
+        "confidence": 0.9976262450218201,
+        "feature_set": "prior_current_delta"
+      },
+      "pneumothorax": {
+        "state": "absent",
+        "confidence": 0.9975505471229553,
+        "feature_set": "full"
+      }
+    },
+    "qwen": {
+      "atelectasis": {
+        "state": "new",
+        "confidence": 0.82
+      },
+      "cardiomegaly": {
+        "state": "absent",
+        "confidence": 0.95
+      },
+      "consolidation": {
+        "state": "absent",
+        "confidence": 0.98
+      },
+      "edema": {
+        "state": "absent",
+        "confidence": 0.99
+      },
+      "pleural_effusion": {
+        "state": "absent",
+        "confidence": 0.99
+      },
+      "pneumonia": {
+        "state": "absent",
+        "confidence": 0.99
+      },
+      "pneumothorax": {
+        "state": "absent",
+        "confidence": 0.99
+      }
+    }
+  },
+  "runtime": {
+    "total_elapsed_seconds": 43.93209019995993,
+    "qwen": {
+      "elapsed_seconds": 38.99826259998372,
+      "gpu_peak_gb": 2.501837730407715,
+      "json_repaired": false
+    }
+  }
+}
