@@ -1,0 +1,4 @@
+pair_id,benchmark_category,exact_match,num_correct_findings,finding_accuracy,json_repaired,elapsed_seconds,gpu_peak_gb
+16732_40_41,multi_change,False,3,0.42857142857142855,False,38.2685736999847,2.498101234436035
+22071_2_3,single_change,False,5,0.7142857142857143,False,28.493596100015566,2.4980826377868652
+25285_0_1,multi_change,False,5,0.7142857142857143,False,26.756123800005298,2.4980826377868652

@@ -1,0 +1,90 @@
+{
+  "seed": 42,
+  "training_pairs": 200,
+  "unique_patients": 190,
+  "findings": {
+    "atelectasis": {
+      "feature_set": "prior_current_delta",
+      "classes": [
+        "absent",
+        "new",
+        "persistent",
+        "resolved"
+      ],
+      "feature_dimension": 1536,
+      "training_accuracy": 1.0,
+      "artifact": "models\\temporal\\atelectasis.pkl"
+    },
+    "cardiomegaly": {
+      "feature_set": "full",
+      "classes": [
+        "absent",
+        "new",
+        "persistent",
+        "resolved"
+      ],
+      "feature_dimension": 2049,
+      "training_accuracy": 1.0,
+      "artifact": "models\\temporal\\cardiomegaly.pkl"
+    },
+    "consolidation": {
+      "feature_set": "full",
+      "classes": [
+        "absent",
+        "new",
+        "persistent",
+        "resolved"
+      ],
+      "feature_dimension": 2049,
+      "training_accuracy": 1.0,
+      "artifact": "models\\temporal\\consolidation.pkl"
+    },
+    "edema": {
+      "feature_set": "prior_current",
+      "classes": [
+        "absent",
+        "new",
+        "persistent",
+        "resolved"
+      ],
+      "feature_dimension": 1024,
+      "training_accuracy": 1.0,
+      "artifact": "models\\temporal\\edema.pkl"
+    },
+    "pleural_effusion": {
+      "feature_set": "prior_current_delta",
+      "classes": [
+        "absent",
+        "new",
+        "persistent",
+        "resolved"
+      ],
+      "feature_dimension": 1536,
+      "training_accuracy": 1.0,
+      "artifact": "models\\temporal\\pleural_effusion.pkl"
+    },
+    "pneumonia": {
+      "feature_set": "prior_current_delta",
+      "classes": [
+        "absent",
+        "new",
+        "resolved"
+      ],
+      "feature_dimension": 1536,
+      "training_accuracy": 1.0,
+      "artifact": "models\\temporal\\pneumonia.pkl"
+    },
+    "pneumothorax": {
+      "feature_set": "full",
+      "classes": [
+        "absent",
+        "new",
+        "persistent",
+        "resolved"
+      ],
+      "feature_dimension": 2049,
+      "training_accuracy": 1.0,
+      "artifact": "models\\temporal\\pneumothorax.pkl"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "num_pairs": 61219,
+  "num_patients": 12051,
+  "pairs_with_change": 23246,
+  "pairs_without_change": 37973,
+  "mean_changed_findings": 0.5279080024175501,
+  "findings": {
+    "atelectasis": {
+      "new": 4357,
+      "resolved": 4302,
+      "persistent": 2636,
+      "absent": 49924
+    },
+    "cardiomegaly": {
+      "new": 1028,
+      "resolved": 1037,
+      "persistent": 482,
+      "absent": 58672
+    },
+    "consolidation": {
+      "new": 2483,
+      "resolved": 2358,
+      "persistent": 1002,
+      "absent": 55376
+    },
+    "edema": {
+      "new": 1175,
+      "resolved": 1213,
+      "persistent": 576,
+      "absent": 58255
+    },
+    "pleural_effusion": {
+      "new": 4876,
+      "resolved": 4503,
+      "persistent": 4354,
+      "absent": 47486
+    },
+    "pneumonia": {
+      "new": 792,
+      "resolved": 763,
+      "persistent": 125,
+      "absent": 59539
+    },
+    "pneumothorax": {
+      "new": 1695,
+      "resolved": 1736,
+      "persistent": 2212,
+      "absent": 55576
+    }
+  }
+}

@@ -1,0 +1,6 @@
+seed,train_pairs,test_pairs,train_patients,test_patients,patient_overlap
+11,140,31,133,29,0
+21,142,30,133,29,0
+42,141,31,133,29,0
+84,138,32,133,29,0
+123,140,31,133,29,0

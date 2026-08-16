@@ -1,0 +1,4 @@
+pair_id,patient_id,prior_image_index,current_image_index,prior_follow_up,current_follow_up,prior_view,current_view,same_view,prior_labels,current_labels,atelectasis_temporal,cardiomegaly_temporal,consolidation_temporal,edema_temporal,pleural_effusion_temporal,pneumonia_temporal,pneumothorax_temporal,num_changed_findings,has_temporal_change,fusion_category
+14663_42_43,14663,00014663_042.png,00014663_043.png,42,43,AP,AP,True,Mass,Consolidation,absent,absent,new,absent,absent,absent,absent,1,True,single_change
+2033_2_3,2033,00002033_002.png,00002033_003.png,2,3,PA,PA,True,No Finding,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged
+11553_17_18,11553,00011553_017.png,00011553_018.png,17,18,AP,AP,True,Infiltration,No Finding,absent,absent,absent,absent,absent,absent,absent,0,False,unchanged

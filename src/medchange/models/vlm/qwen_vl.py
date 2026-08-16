@@ -308,6 +308,180 @@ class QwenVLM:
 
         return output.strip()
 
+    def analyze_image_pair(
+            self,
+            prior_image_path: str | Path,
+            current_image_path: str | Path,
+            question: str,
+    ) -> str:
+        """
+        Run Qwen2.5-VL over a prior/current image pair.
+
+        Image 1 = PRIOR chest radiograph.
+        Image 2 = CURRENT chest radiograph.
+
+        Returns raw generated model text.
+        """
+
+        if self.model is None:
+            self.load()
+
+        prior_path = Path(
+            prior_image_path
+        )
+
+        current_path = Path(
+            current_image_path
+        )
+
+        if not prior_path.exists():
+            raise FileNotFoundError(
+                f"Prior image not found: {prior_path}"
+            )
+
+        if not current_path.exists():
+            raise FileNotFoundError(
+                f"Current image not found: {current_path}"
+            )
+
+        prior_image = Image.open(
+            prior_path
+        ).convert("RGB")
+
+        current_image = Image.open(
+            current_path
+        ).convert("RGB")
+
+        messages = [
+            {
+                "role": "system",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": SYSTEM_PROMPT,
+                    }
+                ],
+            },
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": (
+                            "The following first image is the "
+                            "PRIOR chest radiograph."
+                        ),
+                    },
+                    {
+                        "type": "image",
+                        "image": prior_image,
+                    },
+                    {
+                        "type": "text",
+                        "text": (
+                            "The following second image is the "
+                            "CURRENT chest radiograph."
+                        ),
+                    },
+                    {
+                        "type": "image",
+                        "image": current_image,
+                    },
+                    {
+                        "type": "text",
+                        "text": question,
+                    },
+                ],
+            },
+        ]
+
+        text = (
+            self.processor.apply_chat_template(
+                messages,
+                tokenize=False,
+                add_generation_prompt=True,
+            )
+        )
+
+        image_inputs, video_inputs = (
+            process_vision_info(
+                messages
+            )
+        )
+
+        inputs = self.processor(
+            text=[
+                text
+            ],
+            images=image_inputs,
+            videos=video_inputs,
+            padding=True,
+            return_tensors="pt",
+        )
+
+        target_device = next(
+            self.model.parameters()
+        ).device
+
+        inputs = {
+            key: (
+                value.to(
+                    target_device
+                )
+                if hasattr(
+                    value,
+                    "to",
+                )
+                else value
+            )
+            for key, value
+            in inputs.items()
+        }
+
+        with torch.inference_mode():
+            generated_ids = (
+                self.model.generate(
+                    **inputs,
+                    max_new_tokens=max(
+                        self.config.max_new_tokens,1024,
+                    ),
+                    do_sample=False,
+                    use_cache=True,
+                )
+            )
+
+        generated_ids_trimmed = [
+            output_ids[
+                len(
+                    input_ids
+                ):
+            ]
+            for (
+                input_ids,
+                output_ids,
+            ) in zip(
+                inputs[
+                    "input_ids"
+                ],
+                generated_ids,
+            )
+        ]
+
+        output_text = (
+            self.processor.batch_decode(
+                generated_ids_trimmed,
+                skip_special_tokens=True,
+                clean_up_tokenization_spaces=False,
+            )
+        )
+
+        prior_image.close()
+        current_image.close()
+
+        return output_text[
+            0
+        ].strip()
+
     def unload(self) -> None:
         """
         Release GPU memory.

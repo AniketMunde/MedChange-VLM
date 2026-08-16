@@ -1,0 +1,62 @@
+{
+  "findings": [
+    {
+      "finding": "atelectasis",
+      "prior_status": "absent",
+      "current_status": "present",
+      "change": "new",
+      "confidence": 0.82,
+      "evidence": "New opacity is visible on the current image."
+    },
+    {
+      "finding": "cardiomegaly",
+      "prior_status": "absent",
+      "current_status": "absent",
+      "change": "absent",
+      "confidence": 0.95,
+      "evidence": "No interval cardiac enlargement."
+    },
+    {
+      "finding": "consolidation",
+      "prior_status": "absent",
+      "current_status": "absent",
+      "change": "absent",
+      "confidence": 0.96,
+      "evidence": "No focal consolidation is identified."
+    },
+    {
+      "finding": "edema",
+      "prior_status": "absent",
+      "current_status": "absent",
+      "change": "absent",
+      "confidence": 0.95,
+      "evidence": "No convincing interval pulmonary edema."
+    },
+    {
+      "finding": "pleural effusion",
+      "prior_status": "absent",
+      "current_status": "absent",
+      "change": "absent",
+      "confidence": 0.96,
+      "evidence": "No pleural effusion is identified."
+    },
+    {
+      "finding": "pneumonia",
+      "prior_status": "absent",
+      "current_status": "absent",
+      "change": "absent",
+      "confidence": 0.90,
+      "evidence": "No new focal opacity concerning for pneumonia."
+    },
+    {
+      "finding": "pneumothorax",
+      "prior_status": "absent",
+      "current_status": "absent",
+      "change": "absent",
+      "confidence": 0.97,
+      "evidence": "No pneumothorax is identified."
+    }
+  ],
+  "overall_change": "mixed",
+  "summary": "New atelectatic change is present while the remaining target findings are unchanged."
+}
