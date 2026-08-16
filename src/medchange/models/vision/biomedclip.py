@@ -94,37 +94,65 @@ class BiomedCLIP:
         )
 
     def encode_image(
-        self,
-        image_path: str | Path,
+            self,
+            image_input: str | Path | Image.Image,
     ) -> torch.Tensor:
         """
         Produce a normalized biomedical image embedding.
+
+        Supports either:
+        - filesystem image paths
+        - already decoded PIL images
+
+        This allows both local datasets and streamed
+        Hugging Face datasets to use the same model.
         """
 
         if self.model is None:
             self.load()
 
-        path = Path(image_path)
-
-        if not path.exists():
-            raise FileNotFoundError(
-                f"Image not found: {path}"
+        if isinstance(
+                image_input,
+                Image.Image,
+        ):
+            image = image_input.convert(
+                "RGB"
             )
 
-        with Image.open(path) as image:
-            image = image.convert("RGB")
-
-            image_tensor = (
-                self.preprocess(image)
-                .unsqueeze(0)
-                .to(self.config.device)
+        else:
+            path = Path(
+                image_input
             )
+
+            if not path.exists():
+                raise FileNotFoundError(
+                    f"Image not found: {path}"
+                )
+
+            with Image.open(
+                    path
+            ) as loaded_image:
+                image = loaded_image.convert(
+                    "RGB"
+                )
+
+        image_tensor = (
+            self.preprocess(
+                image
+            )
+            .unsqueeze(0)
+            .to(
+                self.config.device
+            )
+        )
 
         if (
-            self.config.precision == "fp16"
-            and self.config.device == "cuda"
+                self.config.precision == "fp16"
+                and self.config.device == "cuda"
         ):
-            image_tensor = image_tensor.half()
+            image_tensor = (
+                image_tensor.half()
+            )
 
         with torch.inference_mode():
             image_features = (
@@ -134,11 +162,11 @@ class BiomedCLIP:
             )
 
         image_features = (
-            image_features
-            / image_features.norm(
-                dim=-1,
-                keepdim=True,
-            )
+                image_features
+                / image_features.norm(
+            dim=-1,
+            keepdim=True,
+        )
         )
 
         return image_features
@@ -267,16 +295,15 @@ class BiomedCLIP:
         )
 
     def score_finding(
-        self,
-        image_path: str | Path,
-        finding: str,
+            self,
+            image_input: str | Path | Image.Image,
+            finding: str,
     ) -> dict[str, float | str]:
-        """
-        Score one finding.
-        """
 
-        image_features = self.encode_image(
-            image_path
+        image_features = (
+            self.encode_image(
+                image_input
+            )
         )
 
         probability = (
@@ -288,24 +315,21 @@ class BiomedCLIP:
 
         return {
             "finding": finding,
-            "positive_probability": (
-                probability
-            ),
+            "positive_probability": probability,
             "negative_probability": (
-                1.0 - probability
+                    1.0 - probability
             ),
         }
 
     def score_findings(
-        self,
-        image_path: str | Path,
-        findings: list[str],
+            self,
+            image_input: str | Path | Image.Image,
+            findings: list[str],
     ) -> dict[str, float]:
         """
         Score multiple findings efficiently.
 
-        The image is encoded once and text embeddings
-        are cached across images.
+        The image is encoded exactly once.
         """
 
         if not findings:
@@ -315,8 +339,10 @@ class BiomedCLIP:
             findings
         )
 
-        image_features = self.encode_image(
-            image_path
+        image_features = (
+            self.encode_image(
+                image_input
+            )
         )
 
         scores: dict[str, float] = {}

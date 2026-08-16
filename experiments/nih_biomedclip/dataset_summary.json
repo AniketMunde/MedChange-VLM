@@ -1,0 +1,45 @@
+{
+  "num_images": 500,
+  "num_unique_patients": 479,
+  "views": {
+    "PA": 294,
+    "AP": 206
+  },
+  "findings": {
+    "atelectasis": {
+      "positive": 52,
+      "negative": 448,
+      "prevalence": 0.104
+    },
+    "cardiomegaly": {
+      "positive": 15,
+      "negative": 485,
+      "prevalence": 0.03
+    },
+    "consolidation": {
+      "positive": 18,
+      "negative": 482,
+      "prevalence": 0.036
+    },
+    "edema": {
+      "positive": 15,
+      "negative": 485,
+      "prevalence": 0.03
+    },
+    "pleural_effusion": {
+      "positive": 46,
+      "negative": 454,
+      "prevalence": 0.092
+    },
+    "pneumonia": {
+      "positive": 8,
+      "negative": 492,
+      "prevalence": 0.016
+    },
+    "pneumothorax": {
+      "positive": 26,
+      "negative": 474,
+      "prevalence": 0.052
+    }
+  }
+}
