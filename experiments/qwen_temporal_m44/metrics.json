@@ -1,0 +1,50 @@
+{
+  "macro_f1": 0.28165266106442577,
+  "state_recall": {
+    "absent": 0.8452380952380952,
+    "new": 0.2777777777777778,
+    "persistent": 0.0,
+    "resolved": 0.0625
+  },
+  "finding_metrics": {
+    "atelectasis": {
+      "macro_f1": 0.058823529411764705,
+      "n": 30
+    },
+    "cardiomegaly": {
+      "macro_f1": 0.23684210526315788,
+      "n": 30
+    },
+    "consolidation": {
+      "macro_f1": 0.49743589743589745,
+      "n": 30
+    },
+    "edema": {
+      "macro_f1": 0.2222222222222222,
+      "n": 30
+    },
+    "pleural_effusion": {
+      "macro_f1": 0.19387755102040816,
+      "n": 30
+    },
+    "pneumonia": {
+      "macro_f1": 0.2222222222222222,
+      "n": 30
+    },
+    "pneumothorax": {
+      "macro_f1": 0.2222222222222222,
+      "n": 30
+    }
+  },
+  "mean_confidence_correct": 0.9752702702702701,
+  "mean_confidence_incorrect": 0.9137096774193549,
+  "requested_pairs": 30,
+  "successful_pairs": 30,
+  "failed_pairs": 0,
+  "parse_success_rate": 1.0,
+  "json_repair_rate": 0.0,
+  "exact_pair_match_rate": 0.03333333333333333,
+  "mean_finding_accuracy": 0.7047619047619048,
+  "mean_inference_seconds": 27.920602596671475,
+  "max_gpu_peak_gb": 2.498101234436035
+}

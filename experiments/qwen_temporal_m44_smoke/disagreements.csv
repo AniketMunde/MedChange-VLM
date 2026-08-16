@@ -1,0 +1,9 @@
+pair_id,benchmark_category,finding,ground_truth,prediction,confidence,correct
+16732_40_41,multi_change,atelectasis,resolved,new,0.82,False
+16732_40_41,multi_change,cardiomegaly,persistent,absent,0.95,False
+16732_40_41,multi_change,pleural_effusion,new,absent,0.99,False
+16732_40_41,multi_change,pneumothorax,new,absent,0.99,False
+22071_2_3,single_change,atelectasis,persistent,new,0.82,False
+22071_2_3,single_change,consolidation,resolved,absent,0.98,False
+25285_0_1,multi_change,atelectasis,resolved,new,0.82,False
+25285_0_1,multi_change,pleural_effusion,new,absent,0.99,False

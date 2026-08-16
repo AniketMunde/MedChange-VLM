@@ -86,3 +86,5 @@ data/nih/temporal_eval_subset.csv
 # Temporal embedding cache
 data/nih/embedding_cache/
 data/nih/temporal_eval_200.csv
+data/nih/qwen_temporal_benchmark_30.csv
+data/nih/qwen_temporal_benchmark_3.csv
