@@ -21,3 +21,7 @@ scikit-learn>=1.5.0
 datasets>=4.0.0
 huggingface_hub>=1.0.0
 json-repair
+fastapi
+uvicorn[standard]
+python-multipart
+httpx
