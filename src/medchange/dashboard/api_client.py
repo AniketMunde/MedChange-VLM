@@ -121,10 +121,40 @@ class MedChangeAPIClient:
 
             if response.status_code >= 400:
                 try:
-                    detail = response.json().get(
+                    payload = response.json()
+
+                    detail = payload.get(
                         "detail",
-                        response.text,
+                        payload,
                     )
+
+                    if isinstance(
+                            detail,
+                            dict,
+                    ):
+                        message = (
+                                detail.get(
+                                    "message"
+                                )
+                                or str(
+                            detail
+                        )
+                        )
+
+                        retryable = bool(
+                            detail.get(
+                                "retryable",
+                                False,
+                            )
+                        )
+
+                        if retryable:
+                            message += (
+                                " You can retry this request."
+                            )
+
+                        detail = message
+
                 except Exception:
                     detail = response.text
 

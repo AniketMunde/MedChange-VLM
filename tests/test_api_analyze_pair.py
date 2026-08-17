@@ -79,9 +79,29 @@ def test_identical_images_rejected():
         == 400
     )
 
-    assert (
-        "identical file content"
-        in response.json()[
+    detail = (
+        response.json()[
             "detail"
         ]
+    )
+
+    assert (
+        detail[
+            "code"
+        ]
+        == "invalid_image_pair"
+    )
+
+    assert (
+        "identical file content"
+        in detail[
+            "message"
+        ].lower()
+    )
+
+    assert (
+        detail[
+            "retryable"
+        ]
+        is False
     )

@@ -10,6 +10,11 @@ class HealthResponse(BaseModel):
     service: str
     version: str
 
+class APIErrorResponse(BaseModel):
+    code: str
+    message: str
+    retryable: bool = False
+
 
 class ModelInfoResponse(BaseModel):
     biomedclip_model: str
@@ -20,6 +25,24 @@ class ModelInfoResponse(BaseModel):
     safety_threshold: float
 
     target_findings: list[str]
+
+class RuntimeStatusResponse(
+    BaseModel
+):
+    busy: bool
+    total_requests: int
+    successful_requests: int
+    failed_requests: int
+    cache_hits: int
+    cache_entries: int
+    active_request_id: str | None
+
+
+class CacheClearResponse(
+    BaseModel
+):
+    status: str
+    cleared_entries: int
 
 
 class FindingResponse(BaseModel):
@@ -60,3 +83,4 @@ class AnalyzePairResponse(BaseModel):
     safety_threshold: float
 
     total_elapsed_seconds: float
+    cache_hit: bool = False

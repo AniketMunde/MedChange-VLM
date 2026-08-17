@@ -4,6 +4,7 @@ from typing import Any
 
 import pandas as pd
 import streamlit as st
+import json
 
 
 def render_header() -> None:
@@ -440,3 +441,329 @@ def render_evidence_details(
                 )
 
             st.divider()
+def build_text_report(
+    result: dict[str, Any],
+) -> str:
+    lines = []
+
+    lines.append(
+        "MedChange-VLM — Longitudinal Chest X-ray Analysis"
+    )
+
+    lines.append(
+        "=" * 72
+    )
+
+    lines.append(
+        f"Pair ID: {result.get('pair_id', 'N/A')}"
+    )
+
+    lines.append(
+        f"Prior study: "
+        f"{result.get('prior_study_id', 'N/A')}"
+    )
+
+    lines.append(
+        f"Current study: "
+        f"{result.get('current_study_id', 'N/A')}"
+    )
+
+    lines.append("")
+
+    lines.append(
+        f"Overall change: "
+        f"{result.get('overall_change', 'N/A')}"
+    )
+
+    lines.append(
+        f"Uncertainty: "
+        f"{result.get('uncertainty', 'N/A')}"
+    )
+
+    lines.append(
+        f"Requires review: "
+        f"{result.get('requires_review', False)}"
+    )
+
+    lines.append("")
+
+    lines.append(
+        "LONGITUDINAL IMPRESSION"
+    )
+
+    lines.append(
+        "-" * 72
+    )
+
+    lines.append(
+        str(
+            result.get(
+                "impression",
+                "No impression available.",
+            )
+        )
+    )
+
+    lines.append("")
+
+    lines.append(
+        "FINDING-LEVEL RESULTS"
+    )
+
+    lines.append(
+        "-" * 72
+    )
+
+    findings = result.get(
+        "findings",
+        [],
+    )
+
+    for item in findings:
+        finding_name = (
+            str(
+                item.get(
+                    "finding",
+                    "",
+                )
+            )
+            .replace(
+                "_",
+                " ",
+            )
+            .title()
+        )
+
+        lines.append(
+            finding_name
+        )
+
+        lines.append(
+            f"  Final state: "
+            f"{item.get('final_state')}"
+        )
+
+        lines.append(
+            f"  BiomedCLIP: "
+            f"{item.get('biomedclip_state')}"
+        )
+
+        lines.append(
+            f"  Qwen: "
+            f"{item.get('qwen_state')}"
+        )
+
+        lines.append(
+            f"  Agreement: "
+            f"{item.get('agreement')}"
+        )
+
+        lines.append(
+            f"  Uncertainty: "
+            f"{item.get('uncertainty')}"
+        )
+
+        lines.append(
+            f"  Review: "
+            f"{item.get('requires_review')}"
+        )
+
+        evidence = item.get(
+            "evidence"
+        )
+
+        if evidence:
+            lines.append(
+                f"  Evidence: "
+                f"{evidence}"
+            )
+
+        reason = item.get(
+            "decision_reason"
+        )
+
+        if reason:
+            lines.append(
+                f"  Decision trace: "
+                f"{reason}"
+            )
+
+        lines.append("")
+
+    lines.append(
+        "RUN CONFIGURATION"
+    )
+
+    lines.append(
+        "-" * 72
+    )
+
+    lines.append(
+        f"Safety policy: "
+        f"{result.get('safety_policy', 'N/A')}"
+    )
+
+    lines.append(
+        f"Safety threshold: "
+        f"{result.get('safety_threshold', 'N/A')}"
+    )
+
+    lines.append(
+        f"Runtime: "
+        f"{result.get('total_elapsed_seconds', 'N/A')} seconds"
+    )
+
+    lines.append(
+        f"Cache hit: "
+        f"{result.get('cache_hit', False)}"
+    )
+
+    lines.append("")
+
+    lines.append(
+        "Research prototype only. "
+        "Not intended for clinical diagnosis "
+        "or independent patient-care decisions."
+    )
+
+    return "\n".join(
+        lines
+    )
+
+
+def render_downloads(
+    result: dict[str, Any],
+) -> None:
+    st.markdown(
+        "### Export"
+    )
+
+    columns = st.columns(
+        2
+    )
+
+    json_payload = json.dumps(
+        result,
+        indent=2,
+    )
+
+    report_text = (
+        build_text_report(
+            result
+        )
+    )
+
+    pair_id = str(
+        result.get(
+            "pair_id",
+            "medchange-result",
+        )
+    )
+
+    with columns[0]:
+        st.download_button(
+            label=(
+                "Download structured JSON"
+            ),
+
+            data=(
+                json_payload
+            ),
+
+            file_name=(
+                f"{pair_id}_medchange.json"
+            ),
+
+            mime=(
+                "application/json"
+            ),
+
+            width="stretch",
+        )
+
+    with columns[1]:
+        st.download_button(
+            label=(
+                "Download longitudinal report"
+            ),
+
+            data=(
+                report_text
+            ),
+
+            file_name=(
+                f"{pair_id}_report.txt"
+            ),
+
+            mime=(
+                "text/plain"
+            ),
+
+            width="stretch",
+        )
+def render_execution_metadata(
+    result: dict[str, Any],
+) -> None:
+    st.markdown(
+        "### Execution details"
+    )
+
+    columns = st.columns(
+        4
+    )
+
+    with columns[0]:
+        st.metric(
+            "Safety policy",
+            str(
+                result.get(
+                    "safety_policy",
+                    "N/A",
+                )
+            ),
+        )
+
+    with columns[1]:
+        threshold = result.get(
+            "safety_threshold"
+        )
+
+        st.metric(
+            "Threshold",
+            (
+                f"{float(threshold):.2f}"
+                if threshold is not None
+                else "N/A"
+            ),
+        )
+
+    with columns[2]:
+        elapsed = result.get(
+            "total_elapsed_seconds"
+        )
+
+        st.metric(
+            "Runtime",
+            (
+                f"{float(elapsed):.1f}s"
+                if elapsed is not None
+                else "N/A"
+            ),
+        )
+
+    with columns[3]:
+        cache_hit = bool(
+            result.get(
+                "cache_hit",
+                False,
+            )
+        )
+
+        st.metric(
+            "Response source",
+            (
+                "Cache"
+                if cache_hit
+                else "Inference"
+            ),
+        )

@@ -12,7 +12,9 @@ from medchange.dashboard.api_client import (
 )
 from medchange.dashboard.components import (
     render_api_status,
+    render_downloads,
     render_evidence_details,
+    render_execution_metadata,
     render_findings_table,
     render_header,
     render_impression,
@@ -380,14 +382,38 @@ def render_results(
         "## Longitudinal analysis"
     )
 
-    st.caption(
-        f"Pair ID: "
-        f"{result.get('pair_id', 'N/A')}"
+    pair_id = result.get(
+        "pair_id",
+        "N/A",
     )
+
+    prior_study = result.get(
+        "prior_study_id",
+        "N/A",
+    )
+
+    current_study = result.get(
+        "current_study_id",
+        "N/A",
+    )
+
+    st.caption(
+        f"Pair {pair_id} · "
+        f"{prior_study} → "
+        f"{current_study}"
+    )
+
+    # --------------------------------------------------------
+    # HIGH-LEVEL STATUS
+    # --------------------------------------------------------
 
     render_overview_metrics(
         result
     )
+
+    # --------------------------------------------------------
+    # FINDING TABLE
+    # --------------------------------------------------------
 
     st.markdown(
         "### Finding-level comparison"
@@ -400,66 +426,74 @@ def render_results(
         )
     )
 
+    if len(
+        findings
+    ) != 7:
+        st.warning(
+            "The response did not contain "
+            "all seven validated findings."
+        )
+
     render_findings_table(
         findings
     )
+
+    # --------------------------------------------------------
+    # IMPRESSION
+    # --------------------------------------------------------
 
     st.divider()
 
     render_impression(
         result.get(
             "impression",
-            "No impression returned.",
+            "No longitudinal impression returned.",
         )
     )
+
+    # --------------------------------------------------------
+    # REVIEW FLAGS
+    # --------------------------------------------------------
 
     render_review_flags(
         findings
     )
 
+    # --------------------------------------------------------
+    # DETAILED EVIDENCE
+    # --------------------------------------------------------
+
     render_evidence_details(
         findings
     )
 
-    with st.expander(
-        "Run metadata",
-        expanded=False,
-    ):
-        metadata_columns = (
-            st.columns(
-                3
-            )
-        )
+    # --------------------------------------------------------
+    # RUNTIME / CONFIG
+    # --------------------------------------------------------
 
-        metadata_columns[
-            0
-        ].metric(
-            "Safety policy",
-            result.get(
-                "safety_policy",
-                "N/A",
-            ),
-        )
+    st.divider()
 
-        metadata_columns[
-            1
-        ].metric(
-            "Threshold",
-            f"{float(result.get('safety_threshold', 0)):.2f}",
-        )
+    render_execution_metadata(
+        result
+    )
 
-        metadata_columns[
-            2
-        ].metric(
-            "Runtime",
-            (
-                f"{float(result.get('total_elapsed_seconds', 0)):.1f}s"
-            ),
-        )
+    # --------------------------------------------------------
+    # EXPORT
+    # --------------------------------------------------------
+
+    render_downloads(
+        result
+    )
 
 
 def main() -> None:
     render_header()
+    st.info(
+        "Validated scope: longitudinal comparison of seven "
+        "target findings — atelectasis, cardiomegaly, "
+        "consolidation, edema, pleural effusion, pneumonia, "
+        "and pneumothorax. Research prototype only."
+    )
 
     (
         safety_policy,
@@ -500,57 +534,84 @@ def main() -> None:
     if analyze:
         try:
             with st.status(
-                "Running longitudinal analysis...",
-                expanded=True,
+                    "Running MedChange analysis...",
+                    expanded=True,
             ) as status:
 
                 st.write(
-                    "Validating uploaded image pair..."
+                    "1. Validating longitudinal image pair"
                 )
 
                 st.write(
-                    "Running BiomedCLIP temporal inference..."
+                    "2. Preparing safety-aware request"
                 )
 
                 st.write(
-                    "Running Qwen2.5-VL comparison..."
+                    "3. Running temporal vision inference"
                 )
 
                 st.write(
-                    "Applying safety-aware decision policy..."
+                    "4. Running vision-language reasoning"
+                )
+
+                st.write(
+                    "5. Reconciling model evidence"
+                )
+
+                st.write(
+                    "6. Building longitudinal report"
                 )
 
                 result = run_analysis(
                     prior_file=(
                         prior_file
                     ),
+
                     current_file=(
                         current_file
                     ),
+
                     prior_study_id=(
                         prior_study_id
                     ),
+
                     current_study_id=(
                         current_study_id
                     ),
+
                     pair_id=(
                         pair_id
                     ),
+
                     safety_policy=(
                         safety_policy
                     ),
+
                     safety_threshold=(
                         safety_threshold
                     ),
                 )
 
-                status.update(
-                    label=(
-                        "Analysis complete"
-                    ),
-                    state="complete",
-                    expanded=False,
-                )
+                if result.get(
+                        "cache_hit",
+                        False,
+                ):
+                    status.update(
+                        label=(
+                            "Analysis restored from cache"
+                        ),
+                        state="complete",
+                        expanded=False,
+                    )
+
+                else:
+                    status.update(
+                        label=(
+                            "Analysis complete"
+                        ),
+                        state="complete",
+                        expanded=False,
+                    )
 
             st.session_state[
                 "medchange_result"

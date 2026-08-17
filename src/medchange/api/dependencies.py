@@ -6,6 +6,12 @@ from pathlib import Path
 from medchange.safety.config import (
     SafetyPolicyConfig,
 )
+from functools import lru_cache
+
+from medchange.runtime import (
+    InferenceRuntimeManager,
+    ResultCache,
+)
 
 
 TARGET_FINDINGS = [
@@ -18,7 +24,22 @@ TARGET_FINDINGS = [
     "pneumothorax",
 ]
 
+@lru_cache(maxsize=1)
+def get_runtime_manager() -> (
+    InferenceRuntimeManager
+):
+    return InferenceRuntimeManager(
+        lock_timeout_seconds=2.0
+    )
 
+
+@lru_cache(maxsize=1)
+def get_result_cache() -> (
+    ResultCache
+):
+    return ResultCache(
+        max_entries=32
+    )
 @lru_cache(maxsize=1)
 def get_classifier_dir() -> Path:
     path = Path(
