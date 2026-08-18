@@ -88,3 +88,25 @@ data/nih/embedding_cache/
 data/nih/temporal_eval_200.csv
 data/nih/qwen_temporal_benchmark_30.csv
 data/nih/qwen_temporal_benchmark_3.csv
+
+# Local repository audit files
+repo_tree.txt
+
+# QLoRA training datasets
+data/nih/qlora*/
+data/nih/qlora_*/
+
+# QLoRA adapters and trainer checkpoints
+models/qlora/
+
+# Future large temporal caches
+experiments/**/qwen_cache/
+experiments/**/qwen_cache_smoke/
+
+# QLoRA generated datasets
+data/nih/qlora_m75/
+data/nih/qlora_smoke/
+data/nih/qlora*/
+
+# QLoRA adapters / checkpoints
+models/qlora/
