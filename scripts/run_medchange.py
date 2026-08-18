@@ -59,7 +59,9 @@ from medchange.safety.config import (
     SafetyPolicyConfig,
     VALID_SAFETY_POLICIES,
 )
-
+from medchange.inference.input_validation import (
+    validate_image_pair,
+)
 
 TARGET_FINDINGS = [
     "atelectasis",
@@ -144,6 +146,7 @@ def parse_args() -> argparse.Namespace:
     )
 
     return parser.parse_args()
+
 
 def load_classifier_artifact(
     classifier_dir: Path,
@@ -723,6 +726,24 @@ def print_unified_result(
 
 def main() -> None:
     args = parse_args()
+    validation = validate_image_pair(
+        args.prior,
+        args.current,
+    )
+
+    if not validation.valid:
+        print("\nInput validation failed")
+        print("=" * 80)
+        print(validation.reason)
+        print("=" * 80)
+
+        raise SystemExit(1)
+
+    print(
+        "Input validation passed "
+        f"(prior={validation.prior.width}x{validation.prior.height}, "
+        f"current={validation.current.width}x{validation.current.height})"
+    )
 
     start = (
         time.perf_counter()

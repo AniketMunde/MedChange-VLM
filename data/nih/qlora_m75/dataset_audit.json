@@ -1,0 +1,57 @@
+{
+  "milestone": "M7.5",
+  "seed": 42,
+  "source_pairs": 61219,
+  "source_patients": 12051,
+  "patient_overlap_count": 0,
+  "splits": {
+    "train": {
+      "samples": 3000,
+      "patients": 1975,
+      "state_counts": {
+        "absent": 18053,
+        "new": 1132,
+        "persistent": 705,
+        "resolved": 1110
+      },
+      "pair_categories": {
+        "persistent": 600,
+        "new": 750,
+        "resolved": 600,
+        "stable": 1050
+      }
+    },
+    "validation": {
+      "samples": 400,
+      "patients": 260,
+      "state_counts": {
+        "absent": 2495,
+        "new": 118,
+        "persistent": 70,
+        "resolved": 117
+      },
+      "pair_categories": {
+        "persistent": 66,
+        "new": 80,
+        "resolved": 67,
+        "stable": 187
+      }
+    },
+    "test": {
+      "samples": 500,
+      "patients": 318,
+      "state_counts": {
+        "absent": 3132,
+        "new": 137,
+        "persistent": 109,
+        "resolved": 122
+      },
+      "pair_categories": {
+        "persistent": 96,
+        "new": 89,
+        "resolved": 62,
+        "stable": 253
+      }
+    }
+  }
+}
