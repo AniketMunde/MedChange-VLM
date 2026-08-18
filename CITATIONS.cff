@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use MedChange-VLM in your research, please cite this software."
+title: "MedChange-VLM: Safety-Aware Multimodal AI for Longitudinal Chest X-Ray Change Analysis"
+type: software
+version: 0.1.0
+date-released: 2026-08-18
+
+authors:
+  - family-names: "Munde"
+    given-names: "Aniket"
+
+abstract: >
+  MedChange-VLM is a research prototype for longitudinal chest X-ray
+  change analysis. It combines BiomedCLIP-based temporal classification
+  with Qwen2.5-VL multimodal reasoning, evidence fusion, uncertainty
+  estimation, selective-risk policies, human-review routing,
+  evidence-grounded reporting, FastAPI inference, and a Streamlit
+  research interface.
+
+keywords:
+  - medical artificial intelligence
+  - chest x-ray
+  - longitudinal imaging
+  - vision-language model
+  - multimodal AI
+  - BiomedCLIP
+  - Qwen2.5-VL
+  - selective prediction
+  - uncertainty estimation
+  - biomedical imaging
+  - QLoRA
+
+repository-code: "https://github.com/AniketMunde/MedChange-VLM"
+
+license: MIT

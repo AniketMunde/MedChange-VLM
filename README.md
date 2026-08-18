@@ -4,15 +4,25 @@
 
 MedChange-VLM is a research prototype for **longitudinal chest X-ray analysis** that compares a prior and current radiograph to identify clinically relevant temporal changes.
 
-The system combines a **BiomedCLIP-based temporal classifier** with **Qwen2.5-VL multimodal reasoning**, reconciles their predictions through evidence-aware fusion, estimates uncertainty, and selectively abstains when model disagreement makes an automated conclusion unreliable.
+The system combines **BiomedCLIP-based finding-specific temporal classifiers** with **Qwen2.5-VL multimodal reasoning**, reconciles their predictions through evidence-aware fusion, estimates uncertainty, and selectively abstains when model disagreement makes an automated conclusion unreliable.
 
 Rather than optimizing only for prediction coverage, MedChange-VLM is designed around a central principle:
 
 > **When multimodal evidence is insufficient or conflicting, the system should explicitly express uncertainty and route the finding for review rather than silently forcing a prediction.**
 
-The current release supports seven chest X-ray findings and provides a complete research workflow including patient-aware longitudinal dataset construction, temporal modeling, multimodal reasoning, selective-risk evaluation, evidence-grounded reporting, a FastAPI inference service, and a Streamlit dashboard.
+The current research scope is restricted to seven target chest X-ray findings and provides a complete research workflow including patient-aware longitudinal dataset construction, temporal modeling, multimodal reasoning, selective-risk evaluation, evidence-grounded reporting, a FastAPI inference service, and a Streamlit dashboard.
 
-> **Research prototype only. MedChange-VLM is not a medical device and must not be used for clinical diagnosis or patient-care decisions.**
+> **Research prototype only. MedChange-VLM is not a medical device and must not be used for clinical diagnosis, treatment decisions, or patient-care decisions.**
+
+---
+
+## Documentation
+
+- [System Architecture](docs/architecture.md)
+- [Evaluation](docs/evaluation.md)
+- [Safety Architecture](docs/safety.md)
+- [QLoRA Experiments](docs/qlora_experiments.md)
+- [Changelog](CHANGELOG.md)
 
 ---
 
@@ -38,7 +48,7 @@ For every supported finding, the system predicts one of four temporal states:
 | `persistent` | Finding is present in both studies |
 | `resolved` | Finding was present previously but is absent currently |
 
-The system then combines independent evidence from a vision-language model and a learned temporal classifier before deciding whether to return a prediction or request review.
+The system then combines independent evidence from a vision-language model and learned finding-specific temporal classifiers before deciding whether to return a prediction or request review.
 
 ---
 
@@ -58,7 +68,9 @@ Predictions outside this validated research scope should not be interpreted as s
 
 ---
 
-# System Architecture
+## System Architecture
+
+![MedChange-VLM Architecture](docs/images/medchange_architecture.png)
 
 ```text
                     Prior Chest X-Ray
@@ -80,7 +92,8 @@ Predictions outside this validated research scope should not be interpreted as s
      │ Prior / Current │       │ Multimodal       │
      │ Embeddings      │       │ Temporal         │
      │       +         │       │ Reasoning        │
-     │ Temporal Models│       │                  │
+     │ Finding-Specific│       │                  │
+     │ Temporal Models │       │                  │
      └────────┬────────┘       └────────┬─────────┘
               │                         │
               └────────────┬────────────┘
@@ -124,11 +137,15 @@ Predictions outside this validated research scope should not be interpreted as s
                FastAPI          Streamlit
 ```
 
+The architecture deliberately separates model inference, evidence fusion, uncertainty handling, and presentation.
+
+For a detailed description, see the [Architecture Documentation](docs/architecture.md).
+
 ---
 
-# Core Components
+## Core Components
 
-## 1. Longitudinal Dataset Construction
+### 1. Longitudinal Dataset Construction
 
 MedChange-VLM constructs longitudinal study pairs from the NIH ChestX-ray14 dataset.
 
@@ -147,7 +164,7 @@ Patient-level separation is enforced during evaluation so that the same patient 
 
 ---
 
-## 2. BiomedCLIP Temporal Modeling
+### 2. BiomedCLIP Temporal Modeling
 
 The vision branch uses:
 
@@ -185,7 +202,7 @@ for each target finding.
 
 ---
 
-## 3. Qwen2.5-VL Temporal Reasoning
+### 3. Qwen2.5-VL Temporal Reasoning
 
 The second reasoning pathway uses:
 
@@ -201,7 +218,7 @@ Robust parsing and validation prevent malformed model responses from silently en
 
 ---
 
-## 4. Multimodal Evidence Fusion
+### 4. Multimodal Evidence Fusion
 
 MedChange-VLM does not treat either model as an unquestioned authority.
 
@@ -222,7 +239,7 @@ This produces a final temporal state together with a decision reason and review 
 
 ---
 
-# Safety-Aware Selective Prediction
+## Safety-Aware Selective Prediction
 
 A major design goal of MedChange-VLM is **selective prediction**.
 
@@ -256,45 +273,127 @@ Review     : required
 
 Instead of hiding the disagreement, MedChange-VLM exposes it directly.
 
+Importantly, `uncertain` is treated as a **system-level abstention decision**, not as a fifth disease state.
+
 ---
 
-# Evidence-Grounded Reporting
+## Evidence-Grounded Reporting
 
 The final report is generated from the fused structured result rather than allowing an unconstrained language model to invent the final conclusion.
 
-A representative output is:
+The report preserves:
 
-```text
-Overall change : uncertain
-Uncertainty    : high
-Review needed  : True
+- final temporal states
+- uncertainty
+- review status
+- supporting evidence
+- model disagreement
+- safety-policy decision reasons
+- pair-level overall change
+- final impression
 
-IMPRESSION
-
-Uncertain due to model disagreement or insufficient
-agreement: atelectasis.
-
-UNCERTAIN / CONFLICTING FINDINGS
-
-- atelectasis: The current image shows a more prominent
-  opacity in the left lung field compared to the prior image.
-
-REVIEW FLAGS
-
-- atelectasis:
-  BiomedCLIP=absent
-  Qwen=new
-  agreement=conflict
-  uncertainty=high
-```
-
-This makes the reasoning path inspectable and keeps model disagreement visible to the user.
+This keeps the reporting layer downstream of the safety decision rather than allowing report generation to override it.
 
 ---
 
-# Evaluation
+## Demo
 
-## Patient-Aware Evaluation
+MedChange-VLM provides a Streamlit research interface for running safety-aware longitudinal chest X-ray comparisons.
+
+### Longitudinal Analysis Dashboard
+
+![MedChange-VLM Dashboard](docs/images/screenshots/dashboard_overview.png)
+
+The dashboard accepts a prior and current chest X-ray, validates the longitudinal pair, and sends the analysis request to the FastAPI inference service.
+
+Users can inspect:
+
+- prior and current studies
+- temporal finding predictions
+- BiomedCLIP and Qwen2.5-VL outputs
+- model agreement
+- uncertainty
+- human-review flags
+- evidence
+- final longitudinal impression
+
+---
+
+### Multimodal Temporal Reasoning
+
+![Longitudinal Analysis Result](docs/images/screenshots/longitudinal_result.png)
+
+For each supported finding, MedChange-VLM compares two independent evidence streams:
+
+```text
+BiomedCLIP temporal classifiers
+              +
+Qwen2.5-VL temporal reasoning
+              ↓
+       agreement analysis
+              ↓
+        safety policy
+              ↓
+     final temporal state
+```
+
+The current research scope contains seven findings:
+
+```text
+atelectasis
+cardiomegaly
+consolidation
+edema
+pleural effusion
+pneumonia
+pneumothorax
+```
+
+Possible temporal states are:
+
+```text
+absent
+new
+persistent
+resolved
+```
+
+The system can additionally return:
+
+```text
+uncertain
+```
+
+when the available evidence does not satisfy the configured safety policy.
+
+---
+
+### Uncertainty and Human Review
+
+![Uncertainty and Review Example](docs/images/screenshots/uncertainty_review.png)
+
+MedChange-VLM is intentionally designed to abstain when model evidence conflicts.
+
+For example:
+
+```text
+BiomedCLIP : absent
+Qwen       : new
+Agreement  : conflict
+
+Final      : uncertain
+Review     : required
+```
+
+Instead of silently choosing one model, the safety layer preserves the disagreement, explains the decision reason, and routes the finding for review.
+
+> **Research use only:** MedChange-VLM is not a medical device and must not be used for diagnosis, treatment decisions, or patient-care decisions.
+
+---
+
+## Evaluation
+
+### Patient-Aware Evaluation
 
 The final fusion benchmark was evaluated across multiple patient-disjoint splits.
 
@@ -327,8 +426,8 @@ MedChange deliberately sacrifices coverage in exchange for a lower covered error
 Approximately:
 
 ```text
-Coverage    : 70.9%
-Review rate : 29.1%
+Coverage                        : 70.9%
+Review rate                     : 29.1%
 Accuracy on covered predictions : 86.5%
 Covered error rate              : 13.5%
 ```
@@ -339,9 +438,9 @@ The system is designed to route uncertain cases to review rather than maximize a
 
 ---
 
-## State Recall
+### State Recall
 
-### BiomedCLIP
+#### BiomedCLIP
 
 ```text
 Absent      : 0.902 ± 0.025
@@ -350,7 +449,7 @@ Persistent  : 0.117 ± 0.048
 Resolved    : 0.198 ± 0.089
 ```
 
-### Qwen2.5-VL
+#### Qwen2.5-VL
 
 ```text
 Absent      : 0.834 ± 0.049
@@ -359,7 +458,7 @@ Persistent  : 0.000 ± 0.000
 Resolved    : 0.046 ± 0.054
 ```
 
-### MedChange
+#### MedChange
 
 ```text
 Absent      : 0.988 ± 0.011
@@ -368,13 +467,15 @@ Persistent  : 0.000 ± 0.000
 Resolved    : 0.025 ± 0.056
 ```
 
-These results also expose an important limitation: non-absent temporal states remain substantially harder than identifying stable absence.
+These results expose an important limitation: non-absent temporal states remain substantially harder than identifying stable absence.
 
 This limitation motivates future work on balanced temporal supervision and improved multimodal temporal representation learning.
 
+For the complete evaluation discussion, see [Evaluation](docs/evaluation.md).
+
 ---
 
-# Selective-Risk Analysis
+## Selective-Risk Analysis
 
 Multiple abstention strategies were evaluated across confidence thresholds.
 
@@ -402,7 +503,7 @@ The operating point should therefore be selected according to the intended resea
 
 ---
 
-# Experimental QLoRA Adaptation
+## Experimental QLoRA Adaptation
 
 Parameter-efficient temporal adaptation of Qwen2.5-VL was also investigated.
 
@@ -433,25 +534,17 @@ Patient overlap           : 0
 
 The final experimental split contained:
 
-| Split | Pairs |
-|---|---:|
-| Train | 3,000 |
-| Validation | 400 |
-| Test | 500 |
+| Split | Pairs | Patients |
+|---|---:|---:|
+| Train | 3,000 | 1,975 |
+| Validation | 400 | 260 |
+| Test | 500 | 318 |
 
-The training cohort intentionally increased representation of:
+The training cohort intentionally increased representation of change-containing pairs.
 
-```text
-new
-persistent
-resolved
-```
+### M7.5 Assistant-Only QLoRA Experiment
 
-pairs.
-
-### Assistant-Only QLoRA Smoke Experiment
-
-A 20-step QLoRA experiment reduced validation language-model loss to:
+A 20-step assistant-only QLoRA experiment reduced validation language-model loss to:
 
 ```text
 0.0597
@@ -475,9 +568,11 @@ For this reason, the QLoRA adapter is not enabled in the default inference syste
 
 This negative result is retained as part of the research workflow because it demonstrates why aggregate accuracy alone is insufficient for highly imbalanced longitudinal medical tasks.
 
+For the complete experiment history, see [QLoRA Experiments](docs/qlora_experiments.md).
+
 ---
 
-# API
+## API
 
 MedChange-VLM exposes its inference workflow through FastAPI.
 
@@ -487,7 +582,7 @@ Start the API with:
 uvicorn medchange.api.app:app --app-dir src --reload
 ```
 
-The API provides endpoints including:
+The API provides:
 
 ```text
 GET  /health
@@ -513,7 +608,7 @@ and returns structured longitudinal findings, uncertainty, review flags, report 
 
 ---
 
-## API Safety
+### API Safety
 
 The API includes:
 
@@ -533,7 +628,7 @@ A busy inference runtime can return a retryable `503` response rather than launc
 
 ---
 
-# Streamlit Dashboard
+## Streamlit Dashboard
 
 A Streamlit interface provides an interactive research demonstration of the complete MedChange workflow.
 
@@ -562,32 +657,34 @@ The interface intentionally displays disagreement rather than hiding it behind a
 
 ---
 
-# Installation
+## Installation
 
-## 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
 git clone <repository-url>
 cd Medchange-VLM
 ```
 
-## 2. Create a virtual environment
+Replace `<repository-url>` with the GitHub repository URL.
 
-Windows:
+### 2. Create a Virtual Environment
+
+#### Windows
 
 ```powershell
 py -3.11 -m venv .venv
 .venv\Scripts\Activate.ps1
 ```
 
-Linux/macOS:
+#### Linux/macOS
 
 ```bash
 python3.11 -m venv .venv
 source .venv/bin/activate
 ```
 
-## 3. Install dependencies
+### 3. Install Dependencies
 
 ```bash
 pip install --upgrade pip
@@ -598,7 +695,7 @@ GPU-enabled PyTorch should be installed according to the CUDA version available 
 
 ---
 
-# Running the Tests
+## Running the Tests
 
 Run the complete test suite:
 
@@ -620,10 +717,13 @@ The tests cover major components including:
 - API busy-state behavior
 - runtime management
 - cache behavior
+- QLoRA configuration
+- assistant-only masking
+- change-aware sampling
 
 ---
 
-# Project Structure
+## Project Structure
 
 ```text
 Medchange-VLM/
@@ -661,8 +761,21 @@ Medchange-VLM/
 │   └── temporal/
 │
 ├── docs/
+│   ├── architecture.md
+│   ├── evaluation.md
+│   ├── safety.md
+│   ├── qlora_experiments.md
+│   │
 │   └── images/
+│       ├── medchange_architecture.png
+│       └── screenshots/
+│           ├── dashboard_overview.png
+│           ├── longitudinal_result.png
+│           └── uncertainty_review.png
 │
+├── CHANGELOG.md
+├── CITATION.cff
+├── LICENSE
 ├── requirements.txt
 ├── pyproject.toml
 ├── .gitignore
@@ -673,7 +786,7 @@ Generated datasets, downloaded foundation-model weights, caches, and QLoRA check
 
 ---
 
-# Reproducibility
+## Reproducibility
 
 The evaluation pipeline uses:
 
@@ -691,81 +804,85 @@ Patient-level separation is especially important because random image-level spli
 
 ---
 
-# Design Principles
+## Design Principles
 
-MedChange-VLM was developed around several principles.
-
-### Longitudinal reasoning over isolated classification
+### Longitudinal Reasoning Over Isolated Classification
 
 The task is explicitly formulated as change detection between prior and current studies.
 
-### Independent evidence pathways
+### Independent Evidence Pathways
 
 BiomedCLIP and Qwen provide complementary evidence rather than relying on a single model.
 
-### Uncertainty is a result
+### Uncertainty Is a Result
 
 `uncertain` is treated as meaningful system behavior rather than an implementation failure.
 
-### Selective prediction
+### Selective Prediction
 
-The model is allowed to abstain.
+The model is allowed to abstain when the configured safety criteria are not satisfied.
 
-### Human review
+### Human Review
 
 Conflicting or insufficient evidence can trigger explicit review.
 
-### Patient-aware evaluation
+### Patient-Aware Evaluation
 
 Evaluation prevents patient leakage between training and held-out cohorts.
 
-### Transparent negative results
+### Transparent Negative Results
 
 Experiments such as QLoRA adaptation are reported even when they do not improve temporal-state performance.
 
 ---
 
-# Limitations
+## Limitations
 
 MedChange-VLM v0.1.0 has several important limitations.
 
-### Limited finding scope
+### Limited Finding Scope
 
 The current system supports only seven predefined chest X-ray findings.
 
-### Dataset limitations
+Abnormalities outside this set should not be interpreted as ruled out simply because they are absent from the output.
+
+### Dataset Limitations
 
 Development and evaluation are based primarily on NIH ChestX-ray14-derived longitudinal data.
 
 Performance may not transfer to other institutions, acquisition systems, patient populations, or clinical settings.
 
-### Label quality
+### Label Quality
 
 Temporal states are derived from available dataset labels rather than expert-authored longitudinal comparison reports.
 
-### Class imbalance
+### Class Imbalance
 
 `absent` is substantially more common than `new`, `persistent`, and `resolved`.
 
 This particularly affects temporal-state recall.
 
-### VLM reasoning limitations
+### VLM Reasoning Limitations
 
 Qwen2.5-VL is a general-purpose multimodal foundation model and is not a clinically validated radiology model.
 
-### No clinical validation
+### Out-of-Distribution Inputs
 
-The system has not undergone prospective clinical evaluation or regulatory validation.
+Basic image validation does not constitute robust chest X-ray or out-of-distribution detection.
 
-### No diagnostic claim
+Future versions require stronger modality and anatomical validation.
+
+### No Clinical Validation
+
+The system has not undergone prospective clinical evaluation, external institutional validation, or regulatory validation.
+
+### No Diagnostic Claim
 
 Outputs must not be interpreted as medical diagnoses.
 
 ---
 
-# Future Work
-
-The next research directions include:
+## Future Work
 
 ### 1. State-Balanced Temporal Adaptation
 
@@ -778,7 +895,7 @@ persistent
 resolved
 ```
 
-to address the class-collapse observed during QLoRA experiments.
+to address the class collapse observed during QLoRA experiments.
 
 ### 2. Lesion and Anatomical Grounding
 
@@ -827,7 +944,7 @@ Future engineering work may extend the research pipeline toward DICOM ingestion 
 
 ---
 
-# Research Roadmap
+## Research Roadmap
 
 ```text
 Longitudinal Pairing
@@ -842,7 +959,7 @@ Qwen2.5-VL Temporal Reasoning
 Evidence Fusion
         ✓
         │
-Verification + Uncertainty
+Agreement + Uncertainty
         ✓
         │
 Selective-Risk Safety
@@ -872,7 +989,7 @@ External / Expert Validation
 
 ---
 
-# Technology Stack
+## Technology Stack
 
 Core technologies include:
 
@@ -896,7 +1013,7 @@ pytest
 
 ---
 
-# Research Disclaimer
+## Research Disclaimer
 
 **MedChange-VLM is an experimental research prototype.**
 
@@ -914,23 +1031,35 @@ All results should be interpreted as research outputs only.
 
 ---
 
-# Citation
+## Citation
 
 If you use MedChange-VLM in research or build upon the project, please cite the repository.
 
-A formal `CITATION.cff` will be provided with the research release.
+Citation metadata is provided in [`CITATION.cff`](CITATION.cff).
 
 ---
 
-# License
+## License
 
-See the repository `LICENSE` file for licensing information.
+See the repository [`LICENSE`](LICENSE) file for licensing information.
+
+The repository license applies to MedChange-VLM's original code and documentation. External datasets, pretrained models, and third-party dependencies remain subject to their respective licenses and terms.
 
 ---
 
-# Acknowledgements
+## Acknowledgements
 
-This project builds upon open-source research and tooling from the biomedical imaging, vision-language modeling, and machine-learning communities, including BiomedCLIP, Qwen2.5-VL, Hugging Face Transformers, PyTorch, and the NIH ChestX-ray14 dataset ecosystem.
+MedChange-VLM builds upon open-source research and tooling from the biomedical imaging, vision-language modeling, and machine-learning communities, including:
+
+- BiomedCLIP
+- Qwen2.5-VL
+- Hugging Face Transformers
+- PyTorch
+- PEFT
+- bitsandbytes
+- NIH ChestX-ray14
+
+Their inclusion or use does not imply clinical endorsement of MedChange-VLM.
 
 ---
 
