@@ -1,0 +1,94 @@
+{
+  "metrics": {
+    "accuracy": 0.02857142857142857,
+    "macro_f1": 0.016304347826086956,
+    "state_recall": {
+      "absent": 0.0,
+      "new": 0.0,
+      "persistent": 0.0,
+      "resolved": 0.75
+    },
+    "exact_pair_match_rate": 0.0,
+    "parse_success_rate": 1.0,
+    "num_pairs": 15,
+    "elapsed_seconds": 204.64067250001244,
+    "adapter": "models/qlora/medchange_temporal_m73"
+  },
+  "predictions": [
+    {
+      "pair_id": "8_0_1",
+      "parse_success": true,
+      "raw_output": "```json\n{\n  \"findings\": [\n    {\"finding\": \"atelectasis\", \"change\": \"resolved\"},\n    {\"finding\": \"cardiomegaly\", \"change\": \"new\"},\n    {\"finding\": \"consolidation\", \"change\": \"resolved\"},\n    {\"finding\": \"edema\", \"change\": \"resolved\"},\n    {\"finding\": \"pleural_effusion\", \"change\": \"resolved\"},\n    {\"finding\": \"pneumonia\", \"change\": \"resolved\"},\n    {\"finding\": \"pneumothorax\", \"change\": \"resolved\"}\n  ],\n  \"overall_change\": \"resolved\"\n}\n```"
+    },
+    {
+      "pair_id": "8_1_2",
+      "parse_success": true,
+      "raw_output": "```json\n{\n  \"findings\": [\n    {\"finding\": \"atelectasis\", \"change\": \"resolved\"},\n    {\"finding\": \"cardiomegaly\", \"change\": \"new\"},\n    {\"finding\": \"consolidation\", \"change\": \"resolved\"},\n    {\"finding\": \"edema\", \"change\": \"resolved\"},\n    {\"finding\": \"pleural_effusion\", \"change\": \"resolved\"},\n    {\"finding\": \"pneumonia\", \"change\": \"resolved\"},\n    {\"finding\": \"pneumothorax\", \"change\": \"resolved\"}\n  ],\n  \"overall_change\": \"resolved\"\n}\n```"
+    },
+    {
+      "pair_id": "30_0_1",
+      "parse_success": true,
+      "raw_output": "```json\n{\n  \"findings\": [\n    {\"finding\": \"atelectasis\", \"change\": \"resolved\"},\n    {\"finding\": \"cardiomegaly\", \"change\": \"new\"},\n    {\"finding\": \"consolidation\", \"change\": \"resolved\"},\n    {\"finding\": \"edema\", \"change\": \"resolved\"},\n    {\"finding\": \"pleural_effusion\", \"change\": \"resolved\"},\n    {\"finding\": \"pneumonia\", \"change\": \"resolved\"},\n    {\"finding\": \"pneumothorax\", \"change\": \"resolved\"}\n  ],\n  \"overall_change\": \"resolved\"\n}\n```"
+    },
+    {
+      "pair_id": "34_0_1",
+      "parse_success": true,
+      "raw_output": "```json\n{\n  \"findings\": [\n    {\n      \"finding\": \"atelectasis\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"cardiomegaly\",\n      \"change\": \"new\"\n    },\n    {\n      \"finding\": \"consolidation\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"edema\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"pleural_effusion\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"pneumonia\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"pneumothorax\",\n      \"change\": \"resolved\"\n    }\n  ],\n  \"overall_change\": \"resolved\"\n}\n```"
+    },
+    {
+      "pair_id": "35_0_1",
+      "parse_success": true,
+      "raw_output": "```json\n{\n  \"findings\": [\n    {\"finding\": \"atelectasis\", \"change\": \"resolved\"},\n    {\"finding\": \"cardiomegaly\", \"change\": \"new\"},\n    {\"finding\": \"consolidation\", \"change\": \"resolved\"},\n    {\"finding\": \"edema\", \"change\": \"resolved\"},\n    {\"finding\": \"pleural_effusion\", \"change\": \"resolved\"},\n    {\"finding\": \"pneumonia\", \"change\": \"resolved\"},\n    {\"finding\": \"pneumothorax\", \"change\": \"resolved\"}\n  ],\n  \"overall_change\": \"resolved\"\n}\n```"
+    },
+    {
+      "pair_id": "40_1_2",
+      "parse_success": true,
+      "raw_output": "```json\n{\n  \"findings\": [\n    {\n      \"finding\": \"atelectasis\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"cardiomegaly\",\n      \"change\": \"new\"\n    },\n    {\n      \"finding\": \"consolidation\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"edema\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"pleural_effusion\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"pneumonia\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"pneumothorax\",\n      \"change\": \"resolved\"\n    }\n  ],\n  \"overall_change\": \"resolved\"\n}\n```"
+    },
+    {
+      "pair_id": "59_0_1",
+      "parse_success": true,
+      "raw_output": "```json\n{\n  \"findings\": [\n    {\n      \"finding\": \"atelectasis\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"cardiomegaly\",\n      \"change\": \"new\"\n    },\n    {\n      \"finding\": \"consolidation\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"edema\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"pleural_effusion\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"pneumonia\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"pneumothorax\",\n      \"change\": \"resolved\"\n    }\n  ],\n  \"overall_change\": \"resolved\"\n}\n```"
+    },
+    {
+      "pair_id": "71_2_3",
+      "parse_success": true,
+      "raw_output": "```json\n{\n  \"findings\": [\n    {\n      \"finding\": \"atelectasis\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"cardiomegaly\",\n      \"change\": \"new\"\n    },\n    {\n      \"finding\": \"consolidation\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"edema\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"pleural_effusion\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"pneumonia\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"pneumothorax\",\n      \"change\": \"resolved\"\n    }\n  ],\n  \"overall_change\": \"resolved\"\n}\n```"
+    },
+    {
+      "pair_id": "71_3_4",
+      "parse_success": true,
+      "raw_output": "```json\n{\n  \"findings\": [\n    {\n      \"finding\": \"atelectasis\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"cardiomegaly\",\n      \"change\": \"new\"\n    },\n    {\n      \"finding\": \"consolidation\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"edema\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"pleural_effusion\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"pneumonia\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"pneumothorax\",\n      \"change\": \"resolved\"\n    }\n  ],\n  \"overall_change\": \"resolved\"\n}\n```"
+    },
+    {
+      "pair_id": "80_0_1",
+      "parse_success": true,
+      "raw_output": "```json\n{\n  \"findings\": [\n    {\"finding\": \"atelectasis\", \"change\": \"resolved\"},\n    {\"finding\": \"cardiomegaly\", \"change\": \"new\"},\n    {\"finding\": \"consolidation\", \"change\": \"resolved\"},\n    {\"finding\": \"edema\", \"change\": \"resolved\"},\n    {\"finding\": \"pleural_effusion\", \"change\": \"resolved\"},\n    {\"finding\": \"pneumonia\", \"change\": \"resolved\"},\n    {\"finding\": \"pneumothorax\", \"change\": \"resolved\"}\n  ],\n  \"overall_change\": \"resolved\"\n}\n```"
+    },
+    {
+      "pair_id": "80_1_2",
+      "parse_success": true,
+      "raw_output": "```json\n{\n  \"findings\": [\n    {\"finding\": \"atelectasis\", \"change\": \"resolved\"},\n    {\"finding\": \"cardiomegaly\", \"change\": \"new\"},\n    {\"finding\": \"consolidation\", \"change\": \"resolved\"},\n    {\"finding\": \"edema\", \"change\": \"resolved\"},\n    {\"finding\": \"pleural_effusion\", \"change\": \"resolved\"},\n    {\"finding\": \"pneumonia\", \"change\": \"resolved\"},\n    {\"finding\": \"pneumothorax\", \"change\": \"resolved\"}\n  ],\n  \"overall_change\": \"resolved\"\n}\n```"
+    },
+    {
+      "pair_id": "80_4_5",
+      "parse_success": true,
+      "raw_output": "```json\n{\n  \"findings\": [\n    {\"finding\": \"atelectasis\", \"change\": \"resolved\"},\n    {\"finding\": \"cardiomegaly\", \"change\": \"new\"},\n    {\"finding\": \"consolidation\", \"change\": \"resolved\"},\n    {\"finding\": \"edema\", \"change\": \"resolved\"},\n    {\"finding\": \"pleural_effusion\", \"change\": \"resolved\"},\n    {\"finding\": \"pneumonia\", \"change\": \"resolved\"},\n    {\"finding\": \"pneumothorax\", \"change\": \"resolved\"}\n  ],\n  \"overall_change\": \"resolved\"\n}\n```"
+    },
+    {
+      "pair_id": "151_0_1",
+      "parse_success": true,
+      "raw_output": "```json\n{\n  \"findings\": [\n    {\n      \"finding\": \"atelectasis\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"cardiomegaly\",\n      \"change\": \"new\"\n    },\n    {\n      \"finding\": \"consolidation\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"edema\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"pleural_effusion\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"pneumonia\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"pneumothorax\",\n      \"change\": \"resolved\"\n    }\n  ],\n  \"overall_change\": \"resolved\"\n}\n```"
+    },
+    {
+      "pair_id": "151_1_2",
+      "parse_success": true,
+      "raw_output": "```json\n{\n  \"findings\": [\n    {\n      \"finding\": \"atelectasis\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"cardiomegaly\",\n      \"change\": \"new\"\n    },\n    {\n      \"finding\": \"consolidation\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"edema\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"pleural_effusion\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"pneumonia\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"pneumothorax\",\n      \"change\": \"resolved\"\n    }\n  ],\n  \"overall_change\": \"resolved\"\n}\n```"
+    },
+    {
+      "pair_id": "175_1_2",
+      "parse_success": true,
+      "raw_output": "```json\n{\n  \"findings\": [\n    {\n      \"finding\": \"atelectasis\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"cardiomegaly\",\n      \"change\": \"new\"\n    },\n    {\n      \"finding\": \"consolidation\",\n      \"change\": \"persistent\"\n    },\n    {\n      \"finding\": \"edema\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"pleural_effusion\",\n      \"change\": \"resolved\"\n    },\n    {\n      \"finding\": \"pneumonia\",\n      \"change\": \"new\"\n    },\n    {\n      \"finding\": \"pneumothorax\",\n      \"change\": \"resolved\"\n    }\n  ],\n  \"overall_change\": \"new\"\n}\n```"
+    }
+  ]
+}

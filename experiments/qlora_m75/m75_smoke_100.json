@@ -1,0 +1,2319 @@
+{
+  "metrics": {
+    "accuracy": 0.8914285714285715,
+    "macro_f1": 0.23564954682779457,
+    "state_recall": {
+      "absent": 1.0,
+      "new": 0.0,
+      "persistent": 0.0,
+      "resolved": 0.0
+    },
+    "exact_pair_match_rate": 0.53,
+    "parse_success_rate": 1.0,
+    "num_pairs": 100,
+    "elapsed_seconds": 890.8320625000633,
+    "adapter": "models/qlora/medchange_temporal_m75_smoke"
+  },
+  "predictions": [
+    {
+      "pair_id": "18656_0_1",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "resolved",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "18245_9_10",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "23065_32_33",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "new",
+        "pneumonia": "absent",
+        "pneumothorax": "persistent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "27019_1_2",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "new",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "new",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "7317_7_8",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "new",
+        "cardiomegaly": "absent",
+        "consolidation": "new",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "16971_37_38",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "8005_3_4",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "new",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "506_15_16",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "persistent",
+        "pleural_effusion": "persistent",
+        "pneumonia": "persistent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "8701_9_10",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "27213_73_74",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "20434_7_8",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "new",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "5626_5_6",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "persistent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "11592_0_1",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "new",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "28556_0_1",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "8701_48_49",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "persistent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "26753_9_10",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "new",
+        "cardiomegaly": "absent",
+        "consolidation": "resolved",
+        "edema": "absent",
+        "pleural_effusion": "persistent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "5216_2_3",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "new",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "2072_3_4",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "new",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "persistent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "8021_1_2",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "14261_0_1",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "27213_63_64",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "11632_13_14",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "new",
+        "edema": "resolved",
+        "pleural_effusion": "absent",
+        "pneumonia": "resolved",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "25977_6_7",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "20326_12_13",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "resolved",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "persistent",
+        "pleural_effusion": "new",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "22301_8_9",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "1409_2_3",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "26203_4_5",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "resolved",
+        "edema": "absent",
+        "pleural_effusion": "new",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "15530_98_99",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "resolved",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "resolved"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "26925_20_21",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "4425_2_3",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "17137_1_2",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "persistent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "19271_60_61",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "14226_7_8",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "resolved",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "11190_9_10",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "4623_4_5",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "new",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "14795_3_4",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "19073_4_5",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "29514_5_6",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "1666_0_1",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "2270_2_3",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "new",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "1748_2_3",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "2505_16_17",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "new",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "322_10_11",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "new",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "resolved"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "17110_17_18",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "21307_14_15",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "resolved",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "resolved",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "14427_15_16",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "17137_5_6",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "resolved",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "resolved"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "2576_7_8",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "resolved",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "20722_0_1",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "506_23_24",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "persistent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "3527_6_7",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "persistent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "19271_18_19",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "new",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "28211_12_13",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "5542_0_1",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "1409_0_1",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "resolved",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "27892_0_1",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "16348_3_4",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "15568_0_1",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "new",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "5643_0_1",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "6189_2_3",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "1154_6_7",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "8636_1_2",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "19271_41_42",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "persistent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "13426_0_1",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "29188_0_1",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "21734_2_3",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "322_1_2",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "9015_1_2",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "new",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "persistent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "3064_39_40",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "resolved",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "17137_3_4",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "new",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "persistent",
+        "pneumonia": "absent",
+        "pneumothorax": "new"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "11896_12_13",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "21307_23_24",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "new",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "17214_3_4",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "resolved",
+        "cardiomegaly": "absent",
+        "consolidation": "new",
+        "edema": "absent",
+        "pleural_effusion": "new",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "5413_0_1",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "10608_7_8",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "new",
+        "edema": "absent",
+        "pleural_effusion": "persistent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "9925_5_6",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "new",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "1558_6_7",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "resolved",
+        "cardiomegaly": "absent",
+        "consolidation": "resolved",
+        "edema": "absent",
+        "pleural_effusion": "persistent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "20326_13_14",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "resolved",
+        "pleural_effusion": "resolved",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "20326_25_26",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "1485_4_5",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "7418_8_9",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "7053_2_3",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "1404_4_5",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "16971_38_39",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "new",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "new",
+        "pleural_effusion": "new",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "9417_0_1",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "19299_6_7",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "new",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "14427_11_12",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "5643_3_4",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "persistent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "new",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "16971_26_27",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "10481_0_1",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "5026_9_10",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "25132_1_2",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "15793_6_7",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "resolved",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "2466_2_3",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "5274_5_6",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "21307_15_16",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "6237_7_8",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "resolved",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "25757_0_1",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "1103_0_1",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "resolved",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    },
+    {
+      "pair_id": "3360_1_2",
+      "parse_success": true,
+      "ground_truth": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "prediction": {
+        "atelectasis": "absent",
+        "cardiomegaly": "absent",
+        "consolidation": "absent",
+        "edema": "absent",
+        "pleural_effusion": "absent",
+        "pneumonia": "absent",
+        "pneumothorax": "absent"
+      },
+      "raw_output": "{\"findings\":[{\"finding\":\"atelectasis\",\"change\":\"absent\"},{\"finding\":\"cardiomegaly\",\"change\":\"absent\"},{\"finding\":\"consolidation\",\"change\":\"absent\"},{\"finding\":\"edema\",\"change\":\"absent\"},{\"finding\":\"pleural_effusion\",\"change\":\"absent\"},{\"finding\":\"pneumonia\",\"change\":\"absent\"},{\"finding\":\"pneumothorax\",\"change\":\"absent\"}],\"overall_change\":\"stable\"}"
+    }
+  ]
+}
